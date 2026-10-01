@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stamboom · Familie Oosterom</title>
+<meta name="description" content="Interactieve stamboom van de familie Oosterom (Van Oostrum), vanaf Huijbert van Oostrum (ca. 1717) in Lopikerkapel.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/stamboom.css">
+</head>
+<body>
+<header class="site">
+  <a class="brand" href="index.html">Familie Oosterom</a>
+  <nav><a href="index.html">Verhaal</a><a class="active" href="stamboom.html">Stamboom</a><a href="kaart.html">Kaart</a><a href="bronnen.html">Bronnen</a></nav>
+</header>
+<main class="tree-page">
+  <h1>De stamboom</h1>
+  <p class="lead">Alle afstammelingen van Huijbert van Oostrum (ca. 1717) uit Lopikerkapel. Klik op een naam voor
+  details en de akten, zoek op naam, of sleep en scrol om de boom te verkennen. "Lijn naar Arie" toont de rechte lijn
+  naar Arie Oosterom (1908).</p>
+
+  <div class="view-toggle-row">
+    <div class="view-toggle">
+      <button id="view-tree-btn" class="active" type="button">Boomweergave</button>
+      <button id="view-list-btn" type="button">Alfabetische lijst</button>
+    </div>
+    <button id="export-btn" type="button" class="secondary">Exporteer alle info (.txt)</button>
+  </div>
+
+  <div id="tree-view">
+    <div class="tree-toolbar">
+      <div class="search-box">
+        <input type="search" id="person-search" placeholder="Zoek op naam, plaats, notitie…" autocomplete="off">
+        <div id="search-results"></div>
+      </div>
+      <button id="my-line-btn" type="button">Lijn naar Arie</button>
+      <button id="reset-view-btn" type="button">Reset weergave</button>
+      <button id="toggle-extinct-btn" type="button" class="secondary">Takken zonder nazaten na 1900 verbergen</button>
+      <div class="depth-controls" role="group" aria-label="Aantal generaties tonen">
+        <span class="depth-label">Diepte:</span>
+        <button type="button" class="depth-btn" data-depth="2">2</button>
+        <button type="button" class="depth-btn" data-depth="3">3</button>
+        <button type="button" class="depth-btn" data-depth="4">4</button>
+        <button type="button" class="depth-btn" data-depth="5">5</button>
+        <button type="button" class="depth-btn" data-depth="all">Alles</button>
+      </div>
+    </div>
+    <div id="tree-wrap">
+      <svg id="tree-svg"></svg>
+    </div>
+  </div>
+
+  <div id="list-view">
+    <div id="alpha-list" class="alpha-list"></div>
+  </div>
+
+  <div id="detail-panel"></div>
+</main>
+<footer>Familie Oosterom · stamboom in dezelfde vorm als de sites van de families Hillen en Kagol</footer>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="js/stamboom.js"></script>
+</body>
+</html>
