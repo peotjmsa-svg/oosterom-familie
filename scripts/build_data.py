@@ -110,7 +110,7 @@ person("elisabeth_kooiman", "Elisabeth Kooiman", "f", "ca. 1811", "23-1-1893", "
 person("geertje_1830", "Geertje Oosterom", "f", "24-10-1830", "23-3-1846", "Willige Langerak",
        note="Overleden op 15-jarige leeftijd.", recs=[("Geboorte 1830", "hua:E07C91EB-DC1C-49EB-A6AD-361BB4386DF7"),
                                                      ("Overlijden 1846", "hua:82DAEA90-EB56-4618-9551-F680FCD294BD")])
-person("nn_1832", "Levenloos kind", "m", "1832", "27-6-1832", "Polsbroek",
+person("nn_1832", "Levenloos kind Oosterom", "m", "1832", "27-6-1832", "Polsbroek",
        recs=[("Overlijden 1832", "hua:0FCB577E-53DA-4F57-865F-0956006E4C2B")])
 person("hendrik_1833", "Hendrik Oosterom", "m", "17-9-1833", "1909", "Polsbroek",
        note="Sterfjaar uit MyHeritage.", recs=[("Geboorte 1833", "hua:32633A0E-90E0-424B-934E-592C57EAC027")])
@@ -202,7 +202,7 @@ person("arie_1908", "Arie Oosterom", "m", "4-5-1908", "1988", "Polsbroek",
             "kinderen. Sterfjaar uit MyHeritage.",
        recs=[("Geboorte 1908", "hua:F79DE64A-C1CC-CEE3-E043-4701000AEA30")], mh="1500004")
 person("johanna_de_jong", "Johanna Jacoba de Jong", "f", "1917", "1994", None, note="Gegevens uit MyHeritage.")
-person("kinderen_1908", "Vijf kinderen", "m", None, None, None,
+person("kinderen_1908", "Vijf kinderen Oosterom", "m", None, None, None,
        note="Drie zoons en twee dochters. Zij en hun nakomelingen worden op deze site niet bij naam genoemd.")
 
 C = {
@@ -244,6 +244,212 @@ def fmt_date(v):
 
 
 here = os.path.dirname(os.path.abspath(__file__))
+
+# ---------------------------------------------------------------------------------------------------------------
+# Merge the famkroon.nl genealogy (Smetser alias Van Oostrum, run scripts/parse_famkroon.py first). Our own
+# record-checked people above take precedence; famkroon adds the generations before Huijbert (back to Cornelis
+# Smetser, ca. 1515) and the side branches. The user chose to include the Smetser generations (2026-10-01).
+# ---------------------------------------------------------------------------------------------------------------
+FK_URL = "https://www.famkroon.nl/genealogie/stamboom/OOSTEROM.html"
+FK = json.load(open(os.path.join(here, "..", "data", "famkroon.json"), encoding="utf-8"))
+FKP, FKF = FK["people"], FK["families"]
+ROOT = "fk_I"
+# Anchors: our id -> famkroon id
+MAP = {"huijbert": "fk_VII", "teunis_1762": "fk_VIII-g", "arie_1801": "fk_IX-s"}
+
+
+def first4(n):
+    n = (n or "").lower()
+    n = n.replace("huijbert", "huibert").replace("huybert", "huibert").replace("theunis", "teunis")
+    n = n.replace("ij", "y")
+    return re.sub(r"[^a-z]", "", n.split()[0] if n.split() else "")[:4]
+
+
+def fk_year(p):
+    m = re.findall(r"(1[0-9]{3})", str(p.get("born") or ""))
+    return int(m[0]) if m else None
+
+
+def our_year(p):
+    m = re.findall(r"(1[0-9]{3})", str(p.get("born") or ""))
+    return int(m[0]) if m else None
+
+
+# match spouses and children of our couples to famkroon families
+for cid, c in C.items():
+    fh = MAP.get(c["h"])
+    if not fh:
+        continue
+    cand = [f for f in FKF if f["husb"] == fh and f["wife"]]
+    wife = P[c["w"]]
+    best = None
+    for f in cand:
+        wn = FKP[f["wife"]]["name"].lower()
+        if any(tok in wn for tok in wife["name"].lower().split() if len(tok) > 3):
+            best = f
+    if not best:
+        continue
+    MAP[c["w"]] = best["wife"]
+    used = set()
+    for kid in c["children"]:
+        kp = P[kid]
+        for fc in best["chil"]:
+            if fc in used:
+                continue
+            fp = FKP[fc]
+            if first4(fp["name"]) == first4(kp["name"]) and (fk_year(fp) is None or our_year(kp) is None
+                                                            or abs(fk_year(fp) - our_year(kp)) <= 1):
+                MAP[kid] = fc
+                used.add(fc)
+                break
+# Jan Ariensz: famkroon's own person, enriched with what we read in the records
+JAN = "fk_VI-a"
+INV = {v: k for k, v in MAP.items()}
+
+
+def fk_note(p):
+    bits = []
+    if p.get("alias"):
+        bits.append("Ook genoemd: " + p["alias"] + ".")
+    if p.get("occupation"):
+        bits.append("Beroep: " + p["occupation"] + ".")
+    if p.get("residence"):
+        bits.append("Woonde in " + p["residence"] + ".")
+    if p.get("born_place") and p.get("born"):
+        bits.append(f"Geboren/gedoopt in {p['born_place']}.")
+    if p.get("died_place"):
+        bits.append(f"Overleden in {p['died_place']}.")
+    bits.append("Gegevens uit de genealogie op famkroon.nl, niet door ons in de akten gecontroleerd.")
+    return " ".join(bits)
+
+
+for fid, fp in FKP.items():
+    if fid in INV:
+        # enrich our person with famkroon details we do not have yet
+        ours = P[INV[fid]]
+        extra = []
+        if fp.get("occupation") and not ours.get("occupation"):
+            ours["occupation"] = fp["occupation"]
+        if fp.get("died") and not ours.get("died"):
+            ours["died"] = fp["died"].replace("op ", "")
+            extra.append("Sterfdatum volgens famkroon.nl.")
+        if extra:
+            ours["note"] = (ours["note"] + " " + " ".join(extra)).strip()
+        if not any("famkroon" in s["url"] for s in ours["sources"]):
+            ours["sources"].append({"label": "Genealogie famkroon.nl", "url": FK_URL})
+        continue
+    name = re.sub(r"\s*\((?:van )?Smetser\)|\s*\(Smetser\)", "", fp["name"]).strip()
+    P[fid] = {"id": fid, "name": name, "sex": fp.get("sex") or "m",
+              "born": (fp.get("born") or "").replace("op ", "").replace("in het jaar ", "") or None,
+              "died": (fp.get("died") or "").replace("op ", "").replace("in het jaar ", "") or None,
+              "place": fp.get("born_place") or fp.get("residence") or fp.get("died_place"),
+              "note": fk_note(fp), "occupation": fp.get("occupation"), "line": "oosterom",
+              "sources": [{"label": "Genealogie famkroon.nl", "url": FK_URL}]}
+# Jan Ariensz: add our own findings
+P[JAN]["name"] = "Jan Ariensz van Oostrum"
+P[JAN]["occupation"] = "schipper en boer"
+P[JAN]["note"] = ("Ook genoemd Jan Ariensz Smetser en Jan Ariens Schipper (famkroon.nl). Zoon van Arien Smetser en "
+                  "Grietgen Hendricks. In het doopboek van Lopikerkapel staat hij in 1694 als 'Jan Ariense van Oostrum, "
+                  "schipper', wonend onder Jaarsvelderkapel. Trouwde 2-4-1693 met Lijsbeth Huijberts en, als weduwnaar, "
+                  "21-7-1709 met Geertje Gerritse van Beusekom. Begraven 8-2-1753 in de kerk van Lopikerkapel, bijna "
+                  "negentig jaar oud. Zijn eigen doop (ca. 1660) is niet gevonden.")
+P[JAN]["sources"] = [{"label": "Huwelijk 1693", "url": OA + DTB.format("6F67")},
+                     {"label": "Doop zoon Arien 1694 (schipper)", "url": OA + DTB.format("AC50")},
+                     {"label": "Huwelijk 1709", "url": OA + DTB.format("6FAA")},
+                     {"label": "Doop zoon Huijbert 1717", "url": OA + DTB.format("AD25")},
+                     {"label": "Begrafenis 1753", "url": OA + DTB.format("B1AB")},
+                     {"label": "Genealogie famkroon.nl", "url": FK_URL}]
+P["fk_V-a"]["note"] = ("Schipper en boer onder Jaarsveld, overleden vóór 1669. Getrouwd rond 1651 met Grietgen Hendricks "
+                       "(dochter van Hendrick Bastiaansz en Aeltje Gerritsdr), die in 1664 hertrouwde. Hun kinderen werden in "
+                       "Lopikerkapel gedoopt met de achternaam Smetser (1653, 1655, 1659, 1662); dochter Aeltjen trouwde in "
+                       "1680 als 'Aaltjen van Oostrum'. " + P["fk_V-a"]["note"])
+P["fk_V-a"]["sources"] = [{"label": "Doop zoon Arien 1653", "url": OA + DTB.format("AB0A")},
+                          {"label": "Doop dochter Aeltjen 1655", "url": OA + DTB.format("AB01")},
+                          {"label": "Doop zoon Hendrick 1659", "url": OA + DTB.format("AB1A")},
+                          {"label": "Doop dochter Petertgen 1662", "url": OA + DTB.format("AB29")},
+                          {"label": "Genealogie famkroon.nl", "url": FK_URL}]
+P["fk_V-a"]["name"] = "Arien van Oostrum Smetser"
+P["fk_IV-a"]["name"] = "Adriaan van Oostrum Smetser"
+P["fk_I"]["note"] = ("Oudste bekende stamvader. Woonde in de omgeving van Jaarsveld en Lopik. Volgens famkroon.nl "
+                     "huurde een Cornelis Ariensz Smetser rond 1580 het goed Oversloot in het gerecht Jaarsveld, van "
+                     "jonkheer Carel Steur. " + P["fk_I"]["note"])
+
+# families: ours first, then famkroon (ids translated), merging children where they describe the same couple
+ALLF = {cid: dict(c) for cid, c in C.items()}
+pair_index = {(c["h"], c["w"]): cid for cid, c in ALLF.items()}
+for f in FKF:
+    h = INV.get(f["husb"], f["husb"]) if f["husb"] else None
+    w = INV.get(f["wife"], f["wife"]) if f["wife"] else None
+    kids = [INV.get(k, k) for k in f["chil"] if INV.get(k, k) in P]
+    if h not in P:
+        h = None
+    if w not in P:
+        w = None
+    key = (h, w)
+    if key in pair_index:
+        tgt = ALLF[pair_index[key]]
+        for k in kids:
+            if k not in tgt["children"]:
+                tgt["children"].append(k)
+        continue
+    ALLF[f["id"]] = {"id": f["id"], "h": h, "w": w, "children": kids,
+                     "marr": ", ".join(x for x in [f.get("marr_date"), f.get("marr_place")] if x) or None}
+# Jan Ariensz is Huijbert's father: famkroon already lists Huijbert (fk_VII -> huijbert) among Jan's children.
+C = ALLF
+
+# Cousin marriages: famkroon lists such a person twice (as a child in one family and as a spouse in another).
+# Merge a spouse record into the child record when name and birth year are identical.
+is_child = {k for c in C.values() for k in c["children"]}
+by_key = {}
+for pid, pp in P.items():
+    if pid in is_child and year(pp["born"]):
+        by_key.setdefault((pp["name"], year(pp["born"])), []).append(pid)
+for pid in list(P):
+    if pid in is_child or not pid.startswith("fk_") or not year(P[pid]["born"]):
+        continue
+    twins = by_key.get((P[pid]["name"], year(P[pid]["born"])), [])
+    if len(twins) != 1:
+        continue
+    keep = twins[0]
+    for c in C.values():
+        if c["h"] == pid:
+            c["h"] = keep
+        if c["w"] == pid:
+            c["w"] = keep
+    del P[pid]
+
+# Only the male line (user's choice, 2026-10-01): descend through sons only. Daughters stay in the tree with their
+# husband, but their children are left out.
+keep, stack = set(), [ROOT]
+while stack:
+    x = stack.pop()
+    if x in keep or x not in P:
+        continue
+    keep.add(x)
+    if P[x]["sex"] == "m":
+        for c in C.values():
+            if c["h"] == x:
+                stack += c["children"]
+newC = {}
+for cid, c in C.items():
+    if c["h"] in keep and P[c["h"]]["sex"] == "m":
+        newC[cid] = c
+    elif c["w"] in keep and c["h"] not in keep:
+        newC[cid] = dict(c, children=[])
+for c in newC.values():
+    for x in (c["h"], c["w"]):
+        if x:
+            keep.add(x)
+# Blood relatives must carry the family name (Oosterom, Oostrum, Oostrom, Smetser ...); partners are exempt.
+partners = {c["w"] for c in newC.values() if c["h"] in keep} | {c["h"] for c in newC.values() if c["w"] in keep}
+blood = {x for x in keep if x not in partners or x == ROOT}
+for x in sorted(blood):
+    if not re.search(r"oost|smets|smetz", P[x]["name"], re.I):
+        print("  let op: bloedverwant zonder familienaam:", x, P[x]["name"])
+P = {k: v for k, v in P.items() if k in keep}
+C = {cid: dict(c, h=c["h"] if c["h"] in P else None, w=c["w"] if c["w"] in P else None,
+               children=[k for k in c["children"] if k in P]) for cid, c in newC.items()}
+
 with open(os.path.join(here, "..", "data", "familie.json"), "w", encoding="utf-8", newline="\n") as fh:
     json.dump({"people": P, "couples": C}, fh, ensure_ascii=False, indent=1)
 
@@ -252,7 +458,7 @@ tree_people = {}
 for pid, pp in P.items():
     kids = []
     for f in C.values():
-        if pid in (f["h"], f["w"]):
+        if pid in (f["h"], f["w"]) and pid:
             kids += [k for k in f["children"] if k not in kids]
     facts = []
     if pp["born"]:
@@ -267,8 +473,8 @@ for pid, pp in P.items():
         "sources": pp["sources"], "children": kids,
     }
 tree_fams = {fid: {"id": fid, "husb": f["h"], "wife": f["w"], "chil": f["children"],
-                   "marr_date": f["marr"], "marr_place": None} for fid, f in C.items()}
+                   "marr_date": f.get("marr"), "marr_place": None} for fid, f in C.items()}
 with open(os.path.join(here, "..", "data", "stamboom.json"), "w", encoding="utf-8", newline="\n") as fh:
-    json.dump({"root_id": "huijbert", "people": tree_people, "families": tree_fams,
+    json.dump({"root_id": ROOT, "people": tree_people, "families": tree_fams,
                "stats": {"individuals": len(tree_people), "families": len(tree_fams)}}, fh, ensure_ascii=False, indent=1)
 print(len(P), "personen,", len(C), "gezinnen")

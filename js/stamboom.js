@@ -322,7 +322,7 @@
     }
   }
 
-  // The direct line from Huijbert van Oostrum (ca. 1717) down to Arie Oosterom (1908).
+  // The direct line from Cornelis Smetser (ca. 1515) down to Arie Oosterom (1908).
   const MY_LINE_ID = "arie_1908";
 
   function showMyLine() {
@@ -413,7 +413,7 @@
       bannerHtml = `
         <div class="detail-banner unlinked">
           📌 <strong>Plaats in stamboom in onderzoek</strong><br>
-          Deze persoon staat niet in de afstammingslijn van Huijbert van Oostrum, maar hoort bij een aangetrouwde familie.${suggestHtml}
+          Deze persoon staat niet in de afstammingslijn van Cornelis Smetser, maar hoort bij een aangetrouwde familie.${suggestHtml}
         </div>`;
     }
 

@@ -11,7 +11,7 @@
 <body>
 <header class="site">
   <a class="brand" href="index.html">Familie Oosterom</a>
-  <nav><a href="index.html">Verhaal</a><a href="stamboom.html">Stamboom</a><a class="active" href="kaart.html">Kaart</a><a href="bronnen.html">Bronnen</a></nav>
+  <nav><a href="index.html">Verhaal</a><a href="stamboom.html">Stamboom</a><a href="plekken.html">Plekken</a><a class="active" href="kaart.html">Kaart</a><a href="bronnen.html">Bronnen</a></nav>
 </header>
 <main class="wide"><div id="map"></div></main>
 <script>
@@ -26,12 +26,16 @@
   const ROUTE = [["Lopikerkapel", "1717–1801"], ["Jaarsveld", "1801–1830"], ["Polsbroek", "1830–1908"], ["Bergambacht", "1909–"]];
   const extra = {
     "Lopikerkapel": "Hier werden de Van Oostrums in de 18e eeuw gedoopt en getrouwd (Huijbert 1751, Teunis 1787).",
-    "Jaarsveld": "Dijkdorp aan de Lek. Teunis van Oostrum woonde hier als schipper; zijn zoon Arie werd hier in 1801 geboren en was in 1830 ook schipper. Teunis en Geertje Dekker stierven hier in augustus 1830.",
+    "Jaarsveld": "Dijkdorp aan de Lek. Hier woonden de Smetsers al in de 16e eeuw als schipper en boer (goed Oversloot, ca. 1580). Teunis van Oostrum woonde hier als schipper; zijn zoon Arie werd hier in 1801 geboren en was in 1830 ook schipper. Teunis en Geertje Dekker stierven hier in augustus 1830.",
     "Polsbroek": "Arie (1801) werd hier boer in Zuid-Polsbroek. Zijn zoon Teunis (1847) was landbouwer in huis nr. 33 en kreeg hier negentien kinderen. Arie Oosterom werd hier in 1908 geboren.",
     "Willige Langerak": "Arie Oosterom trouwde hier in 1830 met Elisabeth Kooiman.",
     "Benschop": "Teunis Oosterom trouwde hier in 1870 met Adriana Cornelia Lekkerkerker.",
     "Bergambacht": "Vanaf 1909 woonde het gezin van Pieter Oosterom en Willempje Lekkerkerker hier. Pieter overleed hier in 1959.",
     "Noordeloos": "Geertje Dekker, de vrouw van Teunis van Oostrum, kwam hiervandaan.",
+    "Montfoort": "Annetje van Oostrum Smetser trouwde hier in 1649 met Hendrick Jacobs Speyert, burgemeester van Montfoort.",
+    "Portengen": "Arie van Oostrum (1756–1841), broer van Teunis, woonde hier en in Ter Aa met Engeltje Kool.",
+    "Vreeswijk": "Jan van Oostrum (1699), schipper, zoon van Jan Ariensz, trouwde hier in 1746.",
+    "Ameide": "Gerrigje van Oostrum (1753), dochter van Huijbert, overleed hier in 1814.",
   };
   Promise.all([fetch("data/familie.json").then((r) => r.json()), fetch("data/plaatsen.json").then((r) => r.json())])
     .then(([data, pl]) => {
