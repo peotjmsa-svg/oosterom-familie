@@ -119,3 +119,11 @@ footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 24p
 .legend { background: var(--paper); color: var(--ink); padding: 8px 10px; border-radius: 8px; font: 13px system-ui, sans-serif; box-shadow: var(--shadow); }
 .legend div { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
 .legend span.sw { width: 14px; height: 4px; border-radius: 2px; display: inline-block; }
+
+/* Wide picture and scan excerpts */
+figure.wide { margin: 20px 0; }
+figure.wide img { width: 100%; border-radius: 6px; display: block; }
+figure.wide figcaption, figure.scan figcaption { font-size: .8rem; color: var(--muted); line-height: 1.4; margin-top: 6px; }
+figure.scan { clear: both; margin: 18px 0; padding: 10px; background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; }
+figure.scan img { width: auto; max-width: min(100%, 760px); display: block; border-radius: 4px; }
+figure.scan figcaption { font-style: italic; }

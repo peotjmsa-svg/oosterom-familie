@@ -175,8 +175,8 @@
    "born": "5-12-1762",
    "died": "27-8-1830",
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel op 5-12-1762 als Theunes, zoon van Huijbert van Oostrum en Willempje Jaarsveld. Trouwde op 2-12-1787 in Lopikerkapel met Geertje Dekker uit Noordeloos. Ze kregen minstens tien kinderen. Overleden in Jaarsveld op 27-8-1830, 68 jaar oud, drie dagen na zijn vrouw. De overlijdensakte noemt zijn ouders Huibert Oosterom en Willemijntje Jaarsvelt.",
-   "occupation": null,
+   "note": "Gedoopt in Lopikerkapel op 5-12-1762 als Theunes, zoon van Huijbert van Oostrum en Willempje Jaarsveld. Trouwde op 2-12-1787 in Lopikerkapel met Geertje Dekker uit Noordeloos. Ze kregen veertien kinderen; vier zoons heetten Arie, en alleen de laatste (1801) bleef leven. Teunis was schipper en woonde in Jaarsveld, aan de Lek (huwelijksakte van zijn zoon Arie, 1830). Hij overleed in Jaarsveld op 27-8-1830, 68 jaar oud, drie dagen na zijn vrouw. De overlijdensakte noemt zijn ouders Huibert Oosterom en Willemijntje Jaarsvelt.",
+   "occupation": "schipper",
    "line": "oosterom",
    "sources": [
     {
@@ -217,7 +217,7 @@
    "born": "21-9-1788",
    "died": null,
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel.",
+   "note": "Gedoopt in Lopikerkapel. Kreeg in 1803, 15 jaar oud, een zoon Arie; in het doopboek staat geen vader (AF4C).",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -234,13 +234,30 @@
    "born": "27-12-1789",
    "died": null,
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel. Volgens MyHeritage overleden in 1826; in Jaarsveld overleed op 20-8-1826 een Teunis Teunisz Oosterom.",
+   "note": "Gedoopt in Lopikerkapel. Trouwde in 1815 in Jaarsveld met Geertrui Streef. Overleden in Jaarsveld op 20-8-1826, 36 jaar oud.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
      "label": "Doop",
      "url": "https://www.openarchieven.nl/hua:5329E09C-AEF8-4F89-E053-4701000AF4B8"
+    }
+   ]
+  },
+  "magteltje_1791": {
+   "id": "magteltje_1791",
+   "name": "Magteltje van Oostrum",
+   "sex": "f",
+   "born": "4-12-1791",
+   "died": null,
+   "place": "Lopikerkapel",
+   "note": "Gedoopt in Lopikerkapel. Waarschijnlijk jong overleden: in 1800 kregen haar ouders weer een Magteltje.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Doop",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-AF06-4F89-E053-4701000AF4B8"
     }
    ]
   },
@@ -251,7 +268,7 @@
    "born": "11-11-1792",
    "died": null,
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel.",
+   "note": "Gedoopt in Lopikerkapel. Trouwde in 1819 in Jaarsveld met Zwaantje 't Lam.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -268,13 +285,30 @@
    "born": "6-9-1795",
    "died": null,
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel. Waarschijnlijk jong overleden: in 1799 en 1801 kregen zijn ouders weer een Arie.",
+   "note": "Gedoopt in Lopikerkapel. Waarschijnlijk het 'kind van T. Oostrum' dat op 3-2-1796 werd begraven.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
      "label": "Doop",
      "url": "https://www.openarchieven.nl/hua:5329E09C-AF1B-4F89-E053-4701000AF4B8"
+    }
+   ]
+  },
+  "arie_1796": {
+   "id": "arie_1796",
+   "name": "Arie Oosterom",
+   "sex": "m",
+   "born": "2-10-1796",
+   "died": null,
+   "place": "Lopikerkapel",
+   "note": "Gedoopt in Lopikerkapel. Waarschijnlijk het 'kind van T. Oostrum' dat op 23-10-1796 werd begraven.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Doop",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-AF1F-4F89-E053-4701000AF4B8"
     }
    ]
   },
@@ -285,7 +319,7 @@
    "born": "17-12-1797",
    "died": null,
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel.",
+   "note": "Gedoopt in Lopikerkapel. Trouwde in 1821 in Jaarsveld met Lysbeth Jaarsveld.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -302,13 +336,30 @@
    "born": "6-1-1799",
    "died": null,
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel. Waarschijnlijk jong overleden: in 1801 kregen zijn ouders weer een Arie.",
+   "note": "Gedoopt in Lopikerkapel. Waarschijnlijk het 'kind van T. Oostrum' dat op 4-7-1800 werd begraven.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
      "label": "Doop",
      "url": "https://www.openarchieven.nl/hua:5329E09C-AF33-4F89-E053-4701000AF4B8"
+    }
+   ]
+  },
+  "magteltje_1800": {
+   "id": "magteltje_1800",
+   "name": "Magteltje Oostrum",
+   "sex": "f",
+   "born": "23-2-1800",
+   "died": null,
+   "place": "Lopikerkapel",
+   "note": "Gedoopt in Lopikerkapel. Trouwde in 1824 in Jaarsveld met Gijsbert Oskam, dagloner.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Doop",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-AF40-4F89-E053-4701000AF4B8"
     }
    ]
   },
@@ -353,13 +404,30 @@
    "born": "18-12-1808",
    "died": null,
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel.",
+   "note": "Gedoopt in Lopikerkapel. Trouwde in 1833 in Jaarsveld met Ernst Oskam.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
      "label": "Doop",
      "url": "https://www.openarchieven.nl/hua:5329E09C-AF74-4F89-E053-4701000AF4B8"
+    }
+   ]
+  },
+  "jacobus_1805": {
+   "id": "jacobus_1805",
+   "name": "Jacobus Oosterom",
+   "sex": "m",
+   "born": "ca. 1805",
+   "died": null,
+   "place": "Jaarsveld",
+   "note": "Zijn doop is niet gevonden. Trouwde op 27-8-1834 in Lopik (29 jaar) met Margaretha Verbaan; de akte noemt Teunis Oosterom en Geertje Dekker als ouders. MyHeritage geeft hem als sterfjaar 1886, maar dat hoort bij een andere Jacobus (zoon van Johannes).",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Huwelijk 1834",
+     "url": "https://www.openarchieven.nl/hua:4C9F89C3-D4B8-476E-B774-34203D56D669"
     }
    ]
   },
@@ -370,8 +438,8 @@
    "born": "23-2-1801",
    "died": "15-8-1881",
    "place": "Jaarsveld",
-   "note": "Geboren in Jaarsveld, gedoopt op 1-3-1801 in Lopikerkapel als Arie Oostrum, zoon van Teunis en Geertje Dekker. Hij was het derde kind met de naam Arie: twee broertjes met die naam waren waarschijnlijk jong gestorven. Trouwde op 4-6-1830 in Willige Langerak met Elisabeth Kooiman (19). Woonde daarna in Polsbroek, waar hij op 80-jarige leeftijd overleed.",
-   "occupation": null,
+   "note": "Geboren in Jaarsveld, gedoopt op 1-3-1801 in Lopikerkapel als Arie Oostrum, zoon van Teunis en Geertje Dekker. Hij was de vierde zoon met de naam Arie; de drie eerdere waren waarschijnlijk als baby gestorven. Bij zijn huwelijk op 4-6-1830 in Willige Langerak met Elisabeth Kooiman (19) was hij, net als zijn vader, schipper in Jaarsveld. Getuige was onder anderen zijn broer Cornelis Oosterom (24), bouwman. Daarna ging hij boeren: in 1835 is hij bouwman in Zuid-Polsbroek, en zijn vrouw heet landbouwster. Hij overleed op 80-jarige leeftijd in huis nummer 57 in Polsbroek.",
+   "occupation": "schipper, later bouwman",
    "line": "oosterom",
    "sources": [
     {
@@ -381,6 +449,10 @@
     {
      "label": "Huwelijk 1830",
      "url": "https://www.openarchieven.nl/hua:4E6732AB-5866-4D96-A40F-79FC7E4836C3"
+    },
+    {
+     "label": "Geboorte zoon Teunis 1835",
+     "url": "https://www.openarchieven.nl/hua:E4F7BA2B-ADE9-4399-A299-95F0D6C3D701"
     },
     {
      "label": "Overlijden 1881",
@@ -399,8 +471,8 @@
    "born": "ca. 1811",
    "died": "23-1-1893",
    "place": "Willige Langerak",
-   "note": "Uit Willige Langerak, dochter van Hendrik Kooiman en Adriana Hooglander. Overleden in Polsbroek, 81 jaar oud.",
-   "occupation": null,
+   "note": "Uit Willige Langerak, dochter van Hendrik Kooiman, bouwman, en Adriana Hooglander (overleden vóór 1830). Overleden in Polsbroek, 81 jaar oud.",
+   "occupation": "landbouwster",
    "line": "oosterom",
    "sources": [
     {
@@ -425,8 +497,29 @@
    "line": "oosterom",
    "sources": [
     {
+     "label": "Geboorte 1830",
+     "url": "https://www.openarchieven.nl/hua:E07C91EB-DC1C-49EB-A6AD-361BB4386DF7"
+    },
+    {
      "label": "Overlijden 1846",
      "url": "https://www.openarchieven.nl/hua:82DAEA90-EB56-4618-9551-F680FCD294BD"
+    }
+   ]
+  },
+  "nn_1832": {
+   "id": "nn_1832",
+   "name": "Levenloos kind",
+   "sex": "m",
+   "born": "1832",
+   "died": "27-6-1832",
+   "place": "Polsbroek",
+   "note": "",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Overlijden 1832",
+     "url": "https://www.openarchieven.nl/hua:0FCB577E-53DA-4F57-865F-0956006E4C2B"
     }
    ]
   },
@@ -437,13 +530,34 @@
    "born": "17-9-1833",
    "died": "1909",
    "place": "Polsbroek",
-   "note": "Gegevens uit MyHeritage (profiel van vader Arie).",
+   "note": "Sterfjaar uit MyHeritage.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
-     "label": "MyHeritage-stamboom",
-     "url": "https://www.myheritage.nl/profile-OYYV6RLFE43U2DPKEJO6ILZTOTT5LPI-1500229"
+     "label": "Geboorte 1833",
+     "url": "https://www.openarchieven.nl/hua:32633A0E-90E0-424B-934E-592C57EAC027"
+    }
+   ]
+  },
+  "teunis_1835": {
+   "id": "teunis_1835",
+   "name": "Teunis Oosterom",
+   "sex": "m",
+   "born": "12-3-1835",
+   "died": "3-1-1836",
+   "place": "Polsbroek",
+   "note": "Als baby overleden.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte 1835",
+     "url": "https://www.openarchieven.nl/hua:E4F7BA2B-ADE9-4399-A299-95F0D6C3D701"
+    },
+    {
+     "label": "Overlijden 1836",
+     "url": "https://www.openarchieven.nl/hua:CF24087B-386F-42AA-8DA8-19224CFE5A40"
     }
    ]
   },
@@ -454,13 +568,13 @@
    "born": "2-2-1838",
    "died": "1927",
    "place": "Polsbroek",
-   "note": "Gegevens uit MyHeritage (profiel van vader Arie).",
+   "note": "Sterfjaar uit MyHeritage.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
-     "label": "MyHeritage-stamboom",
-     "url": "https://www.myheritage.nl/profile-OYYV6RLFE43U2DPKEJO6ILZTOTT5LPI-1500229"
+     "label": "Geboorte 1838",
+     "url": "https://www.openarchieven.nl/hua:F47CE863-728C-4C22-9F7F-FB84B6D42E11"
     }
    ]
   },
@@ -471,7 +585,7 @@
    "born": "22-8-1839",
    "died": "1907",
    "place": "Polsbroek",
-   "note": "",
+   "note": "Sterfjaar uit MyHeritage.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -488,7 +602,7 @@
    "born": "19-3-1845",
    "died": "13-5-1878",
    "place": "Polsbroek",
-   "note": "Getrouwd met Joris van der Heiden. Overleden op 30-jarige leeftijd.",
+   "note": "Getrouwd met Joris van der Heiden, landbouwer. Overleden op 33-jarige leeftijd (de akte zegt 30).",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -506,13 +620,21 @@
    "id": "teunis_1847",
    "name": "Teunis Oosterom",
    "sex": "m",
-   "born": "17-5-1847",
+   "born": "16-5-1847",
    "died": "25-5-1915",
    "place": "Polsbroek",
-   "note": "Geboren in Zuid-Polsbroek. Trouwde op 9-12-1870 in Benschop met Adriana Cornelia Lekkerkerker (datum uit MyHeritage; de akte is nog niet gezien). Boer in Polsbroek, waar hij in 1915 op 68-jarige leeftijd overleed. De overlijdensakte noemt zijn ouders Arie Oosterom en Elizabeth Kooijman.",
-   "occupation": "landbouwer (bouwman)",
+   "note": "Geboren in Zuid-Polsbroek (de geboorteakte zegt 16 mei, MyHeritage 17 mei). Trouwde in 1870 met Adriana Cornelia Lekkerkerker uit Benschop (de huwelijksakte is nog niet gevonden). Landbouwer in Polsbroek, in 1875 in huis nummer 33. Het echtpaar kreeg tussen 1871 en 1895 negentien kinderen; acht van hen stierven als baby. In de akten wordt de naam vaak Oostrom gespeld. Overleden in Polsbroek, 68 jaar oud. De overlijdensakte noemt zijn ouders Arie Oosterom en Elizabeth Kooijman.",
+   "occupation": "landbouwer",
    "line": "oosterom",
    "sources": [
+    {
+     "label": "Geboorte 1847",
+     "url": "https://www.openarchieven.nl/hua:E1BDC780-9C50-4772-9FE5-40D6D4B24307"
+    },
+    {
+     "label": "Geboorte zoon Pieter 1875",
+     "url": "https://www.openarchieven.nl/hua:E68DD65A-AD25-449A-AF77-D76755DE8B4D"
+    },
     {
      "label": "Overlijden 1915",
      "url": "https://www.openarchieven.nl/hua:A8F3AC7D-FF87-44EF-9636-6A154584BAF3"
@@ -527,16 +649,71 @@
    "id": "adriana_cornelia_lekkerkerker",
    "name": "Adriana Cornelia Lekkerkerker",
    "sex": "f",
-   "born": "1850",
-   "died": "1919",
+   "born": "6-11-1850",
+   "died": "20-3-1919",
    "place": "Benschop",
-   "note": "Dochter van Pieter Lekkerkerker en Marrigje van Os Heijkoop (volgens MyHeritage).",
+   "note": "Geboren in Benschop, dochter van Pieter Lekkerkerker en Marrigje Heijkoop van Os. Moeder van negentien kinderen. Overleden in Polsbroek, 68 jaar oud.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
-     "label": "Geboorte zoon Pieter 1875",
-     "url": "https://www.openarchieven.nl/hua:E68DD65A-AD25-449A-AF77-D76755DE8B4D"
+     "label": "Geboorte 1850",
+     "url": "https://www.openarchieven.nl/hua:EE15904E-175E-49B7-A758-C3AB82372FE5"
+    },
+    {
+     "label": "Overlijden 1919",
+     "url": "https://www.openarchieven.nl/hua:818C77A3-9184-409B-A719-2C5108CDD310"
+    }
+   ]
+  },
+  "elizabeth_1871": {
+   "id": "elizabeth_1871",
+   "name": "Elizabeth Oostrom",
+   "sex": "f",
+   "born": "7-6-1871",
+   "died": null,
+   "place": "Polsbroek",
+   "note": "Trouwde in 1896 met Arie Oosterom (zoon van Hendrik Oosterom en Deliaantje Rietveld).",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:C9162314-81CC-423C-A342-905C1B8D124C"
+    }
+   ]
+  },
+  "merrigje_1872": {
+   "id": "merrigje_1872",
+   "name": "Merrigje Heijkoop Oostrom",
+   "sex": "f",
+   "born": "16-5-1872",
+   "died": "12-8-1872",
+   "place": "Polsbroek",
+   "note": "Als baby overleden.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:7E237296-4B9E-436B-BF98-63B37CFFF0A9"
+    }
+   ]
+  },
+  "merrigje_1873": {
+   "id": "merrigje_1873",
+   "name": "Merrigje Heijkoop Oostrom",
+   "sex": "f",
+   "born": "12-5-1873",
+   "died": null,
+   "place": "Polsbroek",
+   "note": "Trouwde in 1899 met Teunis de Bruin.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:5467032F-DC70-4481-8EAA-9239C210DF71"
     }
    ]
   },
@@ -547,7 +724,7 @@
    "born": "30-4-1874",
    "died": null,
    "place": "Polsbroek",
-   "note": "",
+   "note": "Trouwde in 1899 met Arie Molenaar.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -562,9 +739,9 @@
    "name": "Adriana Cornelia Oosterom",
    "sex": "f",
    "born": "4-10-1876",
-   "died": null,
+   "died": "17-6-1910",
    "place": "Polsbroek",
-   "note": "",
+   "note": "Overleden op 33-jarige leeftijd.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -581,13 +758,30 @@
    "born": "24-2-1878",
    "died": null,
    "place": "Polsbroek",
-   "note": "",
+   "note": "Trouwde in 1905 met Dirk Rijneveld.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
      "label": "Geboorte",
      "url": "https://www.openarchieven.nl/hua:9727F280-DB86-4D38-BEE4-605821687AD0"
+    }
+   ]
+  },
+  "arie_1879": {
+   "id": "arie_1879",
+   "name": "Arie Oostrom",
+   "sex": "m",
+   "born": "11-5-1879",
+   "died": "2-10-1879",
+   "place": "Polsbroek",
+   "note": "Als baby overleden.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:85A6765F-5690-489B-8415-1CFA2952E226"
     }
    ]
   },
@@ -598,13 +792,30 @@
    "born": "28-10-1880",
    "died": null,
    "place": "Polsbroek",
-   "note": "",
+   "note": "Trouwde in 1906 met Elizabeth van Dijk.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
      "label": "Geboorte",
      "url": "https://www.openarchieven.nl/hua:062F51D9-80DF-4845-B5A1-B22CDD37A42D"
+    }
+   ]
+  },
+  "cornelis_johannes_1882a": {
+   "id": "cornelis_johannes_1882a",
+   "name": "Cornelis Johannes Oostrom",
+   "sex": "m",
+   "born": "27-1-1882",
+   "died": "7-2-1882",
+   "place": "Polsbroek",
+   "note": "Als baby overleden.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:2534F079-13E2-4B3E-A92F-58D71AB0D289"
     }
    ]
   },
@@ -615,13 +826,64 @@
    "born": "24-12-1882",
    "died": null,
    "place": "Polsbroek",
-   "note": "",
+   "note": "Trouwde in 1913 in Breukelen met Geertruida Agatha Looij.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
      "label": "Geboorte",
      "url": "https://www.openarchieven.nl/hua:478E9659-78FE-4FAE-BC0B-E874C516BF0A"
+    }
+   ]
+  },
+  "teunis_1884": {
+   "id": "teunis_1884",
+   "name": "Teunis Oostrom",
+   "sex": "m",
+   "born": "4-5-1884",
+   "died": "12-7-1884",
+   "place": "Polsbroek",
+   "note": "Als baby overleden.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:997AF8E8-5DF8-4ECC-80CC-E9E39D7D1CF4"
+    }
+   ]
+  },
+  "johanna_1885": {
+   "id": "johanna_1885",
+   "name": "Johanna Oostrom",
+   "sex": "f",
+   "born": "19-7-1885",
+   "died": "31-8-1885",
+   "place": "Polsbroek",
+   "note": "Als baby overleden.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:642DD921-3489-4C95-9E67-05D3AB543897"
+    }
+   ]
+  },
+  "teunis_1886": {
+   "id": "teunis_1886",
+   "name": "Teunis Oostrom",
+   "sex": "m",
+   "born": "16-10-1886",
+   "died": "21-1-1887",
+   "place": "Polsbroek",
+   "note": "Als baby overleden.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:D26962D6-68AB-405E-8066-CDC936335358"
     }
    ]
   },
@@ -632,7 +894,7 @@
    "born": "8-3-1888",
    "died": null,
    "place": "Polsbroek",
-   "note": "",
+   "note": "Trouwde in 1910 met Bastiaan Zwijnenburg.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -642,20 +904,71 @@
     }
    ]
   },
-  "arie_1879": {
-   "id": "arie_1879",
-   "name": "Arie Oosterom",
+  "adriana_1889": {
+   "id": "adriana_1889",
+   "name": "Adriana Oostrom",
+   "sex": "f",
+   "born": "30-6-1889",
+   "died": null,
+   "place": "Polsbroek",
+   "note": "Trouwde in 1916 met Floris Hogendoorn.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:81B3D5C0-E1B2-4AB6-9AE4-D32844BBCC16"
+    }
+   ]
+  },
+  "wijntje_1890": {
+   "id": "wijntje_1890",
+   "name": "Wijntje Oostrom",
+   "sex": "f",
+   "born": "17-11-1890",
+   "died": "5-11-1915",
+   "place": "Polsbroek",
+   "note": "Overleden op 24-jarige leeftijd.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:A8991BDE-2A46-4DF0-AF0B-B8F1E3D9434B"
+    }
+   ]
+  },
+  "hendrika_1892": {
+   "id": "hendrika_1892",
+   "name": "Hendrika Oostrom",
+   "sex": "f",
+   "born": "24-4-1892",
+   "died": null,
+   "place": "Polsbroek",
+   "note": "Trouwde in 1918 met Adriaan Rozendaal.",
+   "occupation": null,
+   "line": "oosterom",
+   "sources": [
+    {
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:7576DDD8-A9D4-45BE-B978-D5C72F490CAA"
+    }
+   ]
+  },
+  "teunis_1895": {
+   "id": "teunis_1895",
+   "name": "Teunis Oostrom",
    "sex": "m",
-   "born": "1879",
-   "died": "2-10-1879",
+   "born": "8-2-1895",
+   "died": "21-4-1895",
    "place": "Polsbroek",
    "note": "Als baby overleden.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
-     "label": "Overlijden 1879",
-     "url": "https://www.openarchieven.nl/hua:86C4B84D-AC07-402C-9714-87C525AECBE0"
+     "label": "Geboorte",
+     "url": "https://www.openarchieven.nl/hua:7F6D6187-4408-4D04-BCE9-6AC470B24B34"
     }
    ]
   },
@@ -900,12 +1213,16 @@
    "children": [
     "willemijntje_1788",
     "teunis_1789",
+    "magteltje_1791",
     "huijbert_1792",
     "arie_1795",
+    "arie_1796",
     "gerrit_1797",
     "arie_1799",
+    "magteltje_1800",
     "arie_1801",
     "willempje_1804",
+    "jacobus_1805",
     "geertje_1807",
     "teuntje_1808"
    ],
@@ -917,7 +1234,9 @@
    "marr": "4-6-1830, Willige Langerak",
    "children": [
     "geertje_1830",
+    "nn_1832",
     "hendrik_1833",
+    "teunis_1835",
     "adriana_1838",
     "teuntje_1839",
     "elizabeth_1845",
@@ -928,16 +1247,27 @@
   "c_teunis_lekkerkerker": {
    "h": "teunis_1847",
    "w": "adriana_cornelia_lekkerkerker",
-   "marr": "9-12-1870, Benschop",
+   "marr": "1870, Benschop",
    "children": [
+    "elizabeth_1871",
+    "merrigje_1872",
+    "merrigje_1873",
     "teuntje_1874",
     "pieter_1875",
     "adriana_cornelia_1876",
     "geertje_1878",
     "arie_1879",
     "arie_1880",
+    "cornelis_johannes_1882a",
     "cornelis_johannes_1882",
-    "johanna_1888"
+    "teunis_1884",
+    "johanna_1885",
+    "teunis_1886",
+    "johanna_1888",
+    "adriana_1889",
+    "wijntje_1890",
+    "hendrika_1892",
+    "teunis_1895"
    ],
    "id": "c_teunis_lekkerkerker"
   },
