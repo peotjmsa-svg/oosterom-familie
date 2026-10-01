@@ -25,20 +25,30 @@ def person(pid, name, sex, born=None, died=None, place=None, note="", recs=(), m
 
 
 # --- Generation 1: Huijbert van Oostrum (Lopikerkapel) ---
-person("huijbert", "Huijbert van Oostrum", "m", "ca. 1717", None, "Lopikerkapel",
-       note="Oudste zekere voorvader. Hij woonde in Lopikerkapel en noemde zich in 1748 Huijbert Janse: zoon van een Jan. "
-            "Eerst getrouwd met Ariaentje Boef, daarna op 1-6-1751 in Lopikerkapel met Willempje Jaarsveld uit "
-            "Jaarsveld. Waarschijnlijk is hij de Huijbert die op 25-7-1717 in Lopikerkapel werd gedoopt als zoon van "
-            "Jan Ariensz van Oostrum en Geertje Gerrits (van Beusekom), maar dat is nog niet bewezen (zie de bronnenpagina).",
-       recs=[("Ondertrouw en huwelijk 1751", DTB.format("AFA6")), ("Doop dochter Geertruij 1748", DTB.format("AE26"))])
-person("ariaentje_boef", "Ariaentje Boef", "f", None, "vóór 1751", "Lopikerkapel",
-       note="Eerste vrouw van Huijbert van Oostrum. Overleden vóór zijn tweede huwelijk in 1751.",
-       recs=[("Doop dochter Geertruij 1748", DTB.format("AE26"))])
+person("huijbert", "Huijbert van Oostrum", "m", "ca. 1717", "begraven 4-12-1792", "Lopikerkapel",
+       note="Oudste zekere voorvader. Woonde onder Jaarsvelderkapel en noemde zich bij zijn eerste huwelijk Huijbert "
+            "Janse Oostrum: zoon van een Jan. Trouwde op 3-3-1748 in Lopikerkapel met Ariaentje Boef uit Lopik; vier weken "
+            "later werd hun dochter Geertruij gedoopt. Ariaentje werd in december 1749 begraven, een kindje in januari 1750. "
+            "Op 1-6-1751 trouwde hij met Willempje Jaarsveld (begraven 27-12-1764). In 1771 stond hij, wonend in "
+            "Jaarsveld, borg voor de pacht van Jan de With. Hij werd op 4-12-1792 in de kerk van Lopikerkapel begraven, "
+            "in een huurgraf. Waarschijnlijk is hij de Huijbert die op 25-7-1717 in Lopikerkapel werd gedoopt als zoon "
+            "van Jan Ariensz van Oostrum en Geertje Gerrits (van Beusekom), maar dat is nog niet bewezen (zie de bronnenpagina).",
+       recs=[("Ondertrouw en huwelijk 1748", DTB.format("AFA3")), ("Doop dochter Geertruij 1748", DTB.format("AE26")),
+             ("Ondertrouw en huwelijk 1751", DTB.format("AFA6")),
+             ("Borgtocht 1771", "hua:609C5BC0-CC36-4642-E053-4701000A17FD"), ("Begrafenis 1792", DTB.format("B2A6"))])
+person("ariaentje_boef", "Ariaentje Boef", "f", None, "begraven 15-12-1749", "Lopikerkapel",
+       note="Eerste vrouw van Huijbert van Oostrum, uit Lopik. Getrouwd op 3-3-1748. Begraven in Lopikerkapel als "
+            "'vrouw van Huijbert van Oostrum'; een kind van Huijbert werd op 3-1-1750 begraven.",
+       recs=[("Huwelijk 1748", DTB.format("AFA3")), ("Begrafenis 1749", DTB.format("B190")),
+             ("Begrafenis kind 1750", DTB.format("B18C"))])
 person("geertruij_1748", "Geertruij van Oostrum", "f", "31-3-1748", None, "Lopikerkapel",
-       note="Gedoopt in Lopikerkapel, dochter van Huijbert en Ariaentje Boef.", recs=[("Doop 1748", DTB.format("AE26"))])
-person("willempje_jaarsveld", "Willempje Jaarsveld", "f", None, None, "Jaarsveld",
-       note="Kwam uit Jaarsveld. In de akten ook Willempie Jaersvelt en Willemijntje Jaarsvelt.",
-       recs=[("Huwelijk 1751", DTB.format("AFA6")), ("Overlijden zoon Teunis 1830", "hua:CD30A6D2-0FBA-4B6C-B213-C5C1D21D27E4")])
+       note="Gedoopt in Lopikerkapel, dochter van Huijbert en Ariaentje Boef. Waarschijnlijk de Geertruij van Oostrum die "
+            "in 1772 trouwde met Jan van der Graaf en in 1791 met Aelbert van Randwijk (niet bewezen).",
+       recs=[("Doop 1748", DTB.format("AE26"))])
+person("willempje_jaarsveld", "Willempje Jaarsveld", "f", None, "begraven 27-12-1764", "Jaarsveld",
+       note="Kwam uit Jaarsveld. In de akten ook Willempie Jaersvelt en Willemijntje Jaarsvelt. Begraven in "
+            "Lopikerkapel als 'Willemijntje Jaarsveld, vrouw van Huijbert Oostrum'.",
+       recs=[("Huwelijk 1751", DTB.format("AFA6")), ("Begrafenis 1764", DTB.format("B222")), ("Overlijden zoon Teunis 1830", "hua:CD30A6D2-0FBA-4B6C-B213-C5C1D21D27E4")])
 for pid, nm, sx, dt, code in [("gerrigje_1753", "Gerrigje van Oostrum", "f", "4-2-1753", "AE35"),
                               ("willem_1754", "Willem van Oostrum", "m", "25-8-1754", "AE3E"),
                               ("arie_1756", "Arie van Oostrum", "m", "31-10-1756", "AE49"),
@@ -142,7 +152,7 @@ person("kinderen_1908", "Vijf kinderen", "m", None, None, None,
        note="Drie zoons en twee dochters. Zij en hun nakomelingen worden op deze site niet bij naam genoemd.")
 
 C = {
-    "c_huijbert_boef": dict(h="huijbert", w="ariaentje_boef", marr=None, children=["geertruij_1748"]),
+    "c_huijbert_boef": dict(h="huijbert", w="ariaentje_boef", marr="3-3-1748, Lopikerkapel", children=["geertruij_1748"]),
     "c_huijbert_jaarsveld": dict(h="huijbert", w="willempje_jaarsveld", marr="1-6-1751, Lopikerkapel",
                                  children=["gerrigje_1753", "willem_1754", "arie_1756", "dirkje_1759", "teunis_1762"]),
     "c_teunis_dekker": dict(h="teunis_1762", w="geertje_dekker", marr="2-12-1787, Lopikerkapel",

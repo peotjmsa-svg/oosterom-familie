@@ -5,19 +5,31 @@
    "name": "Huijbert van Oostrum",
    "sex": "m",
    "born": "ca. 1717",
-   "died": null,
+   "died": "begraven 4-12-1792",
    "place": "Lopikerkapel",
-   "note": "Oudste zekere voorvader. Hij woonde in Lopikerkapel en noemde zich in 1748 Huijbert Janse: zoon van een Jan. Eerst getrouwd met Ariaentje Boef, daarna op 1-6-1751 in Lopikerkapel met Willempje Jaarsveld uit Jaarsveld. Waarschijnlijk is hij de Huijbert die op 25-7-1717 in Lopikerkapel werd gedoopt als zoon van Jan Ariensz van Oostrum en Geertje Gerrits (van Beusekom), maar dat is nog niet bewezen (zie de bronnenpagina).",
+   "note": "Oudste zekere voorvader. Woonde onder Jaarsvelderkapel en noemde zich bij zijn eerste huwelijk Huijbert Janse Oostrum: zoon van een Jan. Trouwde op 3-3-1748 in Lopikerkapel met Ariaentje Boef uit Lopik; vier weken later werd hun dochter Geertruij gedoopt. Ariaentje werd in december 1749 begraven, een kindje in januari 1750. Op 1-6-1751 trouwde hij met Willempje Jaarsveld (begraven 27-12-1764). In 1771 stond hij, wonend in Jaarsveld, borg voor de pacht van Jan de With. Hij werd op 4-12-1792 in de kerk van Lopikerkapel begraven, in een huurgraf. Waarschijnlijk is hij de Huijbert die op 25-7-1717 in Lopikerkapel werd gedoopt als zoon van Jan Ariensz van Oostrum en Geertje Gerrits (van Beusekom), maar dat is nog niet bewezen (zie de bronnenpagina).",
    "occupation": null,
    "line": "oosterom",
    "sources": [
+    {
+     "label": "Ondertrouw en huwelijk 1748",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-AFA3-4F89-E053-4701000AF4B8"
+    },
+    {
+     "label": "Doop dochter Geertruij 1748",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-AE26-4F89-E053-4701000AF4B8"
+    },
     {
      "label": "Ondertrouw en huwelijk 1751",
      "url": "https://www.openarchieven.nl/hua:5329E09C-AFA6-4F89-E053-4701000AF4B8"
     },
     {
-     "label": "Doop dochter Geertruij 1748",
-     "url": "https://www.openarchieven.nl/hua:5329E09C-AE26-4F89-E053-4701000AF4B8"
+     "label": "Borgtocht 1771",
+     "url": "https://www.openarchieven.nl/hua:609C5BC0-CC36-4642-E053-4701000A17FD"
+    },
+    {
+     "label": "Begrafenis 1792",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-B2A6-4F89-E053-4701000AF4B8"
     }
    ]
   },
@@ -26,15 +38,23 @@
    "name": "Ariaentje Boef",
    "sex": "f",
    "born": null,
-   "died": "vóór 1751",
+   "died": "begraven 15-12-1749",
    "place": "Lopikerkapel",
-   "note": "Eerste vrouw van Huijbert van Oostrum. Overleden vóór zijn tweede huwelijk in 1751.",
+   "note": "Eerste vrouw van Huijbert van Oostrum, uit Lopik. Getrouwd op 3-3-1748. Begraven in Lopikerkapel als 'vrouw van Huijbert van Oostrum'; een kind van Huijbert werd op 3-1-1750 begraven.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
-     "label": "Doop dochter Geertruij 1748",
-     "url": "https://www.openarchieven.nl/hua:5329E09C-AE26-4F89-E053-4701000AF4B8"
+     "label": "Huwelijk 1748",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-AFA3-4F89-E053-4701000AF4B8"
+    },
+    {
+     "label": "Begrafenis 1749",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-B190-4F89-E053-4701000AF4B8"
+    },
+    {
+     "label": "Begrafenis kind 1750",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-B18C-4F89-E053-4701000AF4B8"
     }
    ]
   },
@@ -45,7 +65,7 @@
    "born": "31-3-1748",
    "died": null,
    "place": "Lopikerkapel",
-   "note": "Gedoopt in Lopikerkapel, dochter van Huijbert en Ariaentje Boef.",
+   "note": "Gedoopt in Lopikerkapel, dochter van Huijbert en Ariaentje Boef. Waarschijnlijk de Geertruij van Oostrum die in 1772 trouwde met Jan van der Graaf en in 1791 met Aelbert van Randwijk (niet bewezen).",
    "occupation": null,
    "line": "oosterom",
    "sources": [
@@ -60,15 +80,19 @@
    "name": "Willempje Jaarsveld",
    "sex": "f",
    "born": null,
-   "died": null,
+   "died": "begraven 27-12-1764",
    "place": "Jaarsveld",
-   "note": "Kwam uit Jaarsveld. In de akten ook Willempie Jaersvelt en Willemijntje Jaarsvelt.",
+   "note": "Kwam uit Jaarsveld. In de akten ook Willempie Jaersvelt en Willemijntje Jaarsvelt. Begraven in Lopikerkapel als 'Willemijntje Jaarsveld, vrouw van Huijbert Oostrum'.",
    "occupation": null,
    "line": "oosterom",
    "sources": [
     {
      "label": "Huwelijk 1751",
      "url": "https://www.openarchieven.nl/hua:5329E09C-AFA6-4F89-E053-4701000AF4B8"
+    },
+    {
+     "label": "Begrafenis 1764",
+     "url": "https://www.openarchieven.nl/hua:5329E09C-B222-4F89-E053-4701000AF4B8"
     },
     {
      "label": "Overlijden zoon Teunis 1830",
@@ -850,7 +874,7 @@
   "c_huijbert_boef": {
    "h": "huijbert",
    "w": "ariaentje_boef",
-   "marr": null,
+   "marr": "3-3-1748, Lopikerkapel",
    "children": [
     "geertruij_1748"
    ],
