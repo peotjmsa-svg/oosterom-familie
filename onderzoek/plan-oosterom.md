@@ -86,6 +86,8 @@ Evidence that Huijbert = the 1717 son of Jan Ariensz × Geertje Gerrits (van Beu
   Jan Ariensz", `B11C`); Grietie 1704 → Grietie 1710; Huijbert 1695 → Huijbert 1717. So the 1695 Huijbert probably
   died young. Other children of Jan: twins Jan and Hendrik 1696, Hendrik 1697, twins Jan and Willem 1699, Aeltie 1701,
   Dirkie 1715, Jacobus 1718, Theunis 1721 (buried 15-3-1736 as son of Jan Arienz, `B118`), Aefje 1723.
+  Checked (`AC56`, `AC5E`, `AC63`, `AC7D`): all 1696–1699 children have mother Lijsbeth Huijberts, so the reuse
+  pattern holds four more times (Jan 1696 → 1699, Hendrik 1696 → 1697).
 - Huijbert's children are named Geertruij (his mother Geertje?), Gerrigje (Gerrit, her father?), Willem, Arie (Jan's
   father Arien?), Dirkje (Jan's daughter Dirkie 1715) and Teunis (Jan's son Theunis 1721). Fits the 1717 family.
 - Jan Ariensz van Oostrum was buried in Lopikerkapel on 8-2-1753 (`B1AB`, "Jan Arienze Oostrum").
