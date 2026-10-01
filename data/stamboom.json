@@ -1599,12 +1599,8 @@
    "death_year": null,
    "occupation": null,
    "place": "Jaarsveld",
-   "note": "geboren rond 1595. Ook genoemd Arien Cornelisz van Oostrum. In 1621 liet hij in Lopikerkapel een zoon Arien dopen; daar heet hij al 'Arien Cornelisz van Oostrum' en zijn vrouw Hendrickgen Cock. Ook genoemd: Aryaen. Geboren/gedoopt in Jaarsveld. Gegevens uit de genealogie op famkroon.nl, niet door ons in de akten gecontroleerd.",
+   "note": "geboren rond 1595. Ook genoemd: Aryaen. Geboren/gedoopt in Jaarsveld. Gegevens uit de genealogie op famkroon.nl, niet door ons in de akten gecontroleerd.",
    "sources": [
-    {
-     "label": "Doop zoon Arien 1621",
-     "url": "https://www.openarchieven.nl/hua:5329E09C-AB20-4F89-E053-4701000AF4B8"
-    },
     {
      "label": "Genealogie famkroon.nl",
      "url": "https://www.famkroon.nl/genealogie/stamboom/OOSTEROM.html"
@@ -1785,16 +1781,12 @@
    "id": "fk_V-a",
    "name": "Arien van Oostrum Smetser",
    "sex": "M",
-   "birth_year": 1621,
+   "birth_year": 1630,
    "death_year": 1669,
    "occupation": "schipper en boer",
-   "place": "Lopikerkapel",
-   "note": "geboren 1 jan 1621 · overleden voor 1669. Gedoopt op 1-1-1621 in Lopikerkapel als 'Arien van Oostrum', zoon van Arien Cornelisz van Oostrum en Hendrickgen Cock (famkroon.nl schat hem op ca. 1630). Schipper en boer onder Jaarsveld, overleden vóór 1669. Getrouwd rond 1651 met Grietgen Hendricks (dochter van Hendrick Bastiaansz en Aeltje Gerritsdr), die in 1664 hertrouwde. Hun kinderen werden in Lopikerkapel gedoopt met de achternaam Smetser (1653, 1655, 1659, 1662); dochter Aeltjen trouwde in 1680 als 'Aaltjen van Oostrum'. Beroep: schipper en boer. Woonde in Jaarsveld. Gegevens uit de genealogie op famkroon.nl, niet door ons in de akten gecontroleerd.",
+   "place": "Jaarsveld",
+   "note": "geboren rond 1630 · overleden voor 1669. Schipper en boer onder Jaarsveld, overleden vóór 1669. Getrouwd rond 1651 met Grietgen Hendricks (dochter van Hendrick Bastiaansz en Aeltje Gerritsdr), die in 1664 hertrouwde. Hun kinderen werden in Lopikerkapel gedoopt met de achternaam Smetser (1653, 1655, 1659, 1662); dochter Aeltjen trouwde in 1680 als 'Aaltjen van Oostrum'. Beroep: schipper en boer. Woonde in Jaarsveld. Gegevens uit de genealogie op famkroon.nl, niet door ons in de akten gecontroleerd.",
    "sources": [
-    {
-     "label": "Doop 1621",
-     "url": "https://www.openarchieven.nl/hua:5329E09C-AB20-4F89-E053-4701000AF4B8"
-    },
     {
      "label": "Doop zoon Arien 1653",
      "url": "https://www.openarchieven.nl/hua:5329E09C-AB0A-4F89-E053-4701000AF4B8"

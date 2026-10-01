@@ -25,7 +25,10 @@ for ident in sys.argv[1:]:
     t = subprocess.run(["curl", "-s", f"https://api.openarch.nl/1.0/records/show.json?archive={a}&identifier={i}&lang=nl"],
                        capture_output=True).stdout.decode("utf-8", "replace")
     time.sleep(0.3)
-    j = flat(json.loads(t))
+    try:
+        j = flat(json.loads(t))
+    except Exception:
+        time.sleep(2); continue
     j = j[0] if isinstance(j, list) else j
     names = {}
     for p in lst(j.get("Person")):
