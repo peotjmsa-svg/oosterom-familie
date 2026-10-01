@@ -369,6 +369,19 @@ P["fk_V-a"]["sources"] = [{"label": "Doop zoon Arien 1653", "url": OA + DTB.form
                           {"label": "Doop dochter Petertgen 1662", "url": OA + DTB.format("AB29")},
                           {"label": "Genealogie famkroon.nl", "url": FK_URL}]
 P["fk_V-a"]["name"] = "Arien van Oostrum Smetser"
+P["fk_V-a"]["born"] = "1-1-1621"
+P["fk_V-a"]["place"] = "Lopikerkapel"
+P["fk_V-a"]["note"] = ("Gedoopt op 1-1-1621 in Lopikerkapel als 'Arien van Oostrum', zoon van Arien Cornelisz van Oostrum en "
+                       "Hendrickgen Cock (famkroon.nl schat hem op ca. 1630). " + P["fk_V-a"]["note"])
+P["fk_V-a"]["sources"].insert(0, {"label": "Doop 1621", "url": OA + DTB.format("AB20")})
+P["fk_IV-a"]["note"] = ("Ook genoemd Arien Cornelisz van Oostrum. In 1621 liet hij in Lopikerkapel een zoon Arien dopen; "
+                        "daar heet hij al 'Arien Cornelisz van Oostrum' en zijn vrouw Hendrickgen Cock. " + P["fk_IV-a"]["note"])
+P["fk_IV-a"]["sources"].insert(0, {"label": "Doop zoon Arien 1621", "url": OA + DTB.format("AB20")})
+for c in C.values():
+    if c["h"] == "fk_IV-a" and c["w"]:
+        P[c["w"]]["name"] = "Hendrickgen Cock"
+        P[c["w"]]["note"] = ("In de doop van 1621 'Hendrickgen Cock'. famkroon.nl noemt haar 'Hendrickje (de Reus?)', dochter "
+                             "van Cornelis de Reus en een N.N. Cornelis Cocq. " + P[c["w"]]["note"])
 P["fk_IV-a"]["name"] = "Adriaan van Oostrum Smetser"
 P["fk_I"]["note"] = ("Oudste bekende stamvader. Woonde in de omgeving van Jaarsveld en Lopik. Volgens famkroon.nl "
                      "huurde een Cornelis Ariensz Smetser rond 1580 het goed Oversloot in het gerecht Jaarsveld, van "
