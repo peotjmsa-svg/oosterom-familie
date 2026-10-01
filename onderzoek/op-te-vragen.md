@@ -12,3 +12,6 @@
   er echt maar zes kinderen genoemd worden (Tomas, Maechie, Ernst, Claesje, Marrichje, Pieter) en geen Jan.
 - [ ] Notaris F. van Ewyck de Jonge (U034a4), inv. 817, nr. 71, 30-1-1682: testament Hendrickje Cornelis, weduwe van
   Arien Hendricksz van Oostrum, "op de Vaert". De scan online is zwart-wit en slecht leesbaar; vraag een betere scan.
+- [ ] Toegang 205 Huis Jaarsveld (heerlijkheid): pacht- en leenregisters 1550–1650. Zoek Smetser, Arien/Cornelis
+  Smetser, Van Oostrum, het goed Oversloot. Doel: waar komt de naam Van Oostrum vandaan, wie was de vrouw van
+  Cornelis Smetser (ca. 1565)?
