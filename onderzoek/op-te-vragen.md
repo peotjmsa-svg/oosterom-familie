@@ -8,3 +8,7 @@
 - [ ] Lidmatenregister NH gemeente Lopikerkapel en Jaarsveld, ca. 1735–1760: inschrijving van Huijbert van Oostrum.
 - [ ] Burgerlijke stand Benschop, huwelijk 9-12-1870 Teunis Oosterom × Adriana Cornelia Lekkerkerker (niet geïndexeerd
   op Open Archieven onder deze namen).
+- [ ] Weeskamer Jaarsveld, inv. 272/473, akte 1-11-1706 en 10-11-1706: boedel van Arijen Ernsten van Oostrum. Kijk of
+  er echt maar zes kinderen genoemd worden (Tomas, Maechie, Ernst, Claesje, Marrichje, Pieter) en geen Jan.
+- [ ] Notaris F. van Ewyck de Jonge (U034a4), inv. 817, nr. 71, 30-1-1682: testament Hendrickje Cornelis, weduwe van
+  Arien Hendricksz van Oostrum, "op de Vaert". De scan online is zwart-wit en slecht leesbaar; vraag een betere scan.

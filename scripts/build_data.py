@@ -31,8 +31,9 @@ person("huijbert", "Huijbert van Oostrum", "m", "ca. 1717", "begraven 4-12-1792"
             "later werd hun dochter Geertruij gedoopt. Ariaentje werd in december 1749 begraven, een kindje in januari 1750. "
             "Op 1-6-1751 trouwde hij met Willempje Jaarsveld (begraven 27-12-1764). In 1771 stond hij, wonend in "
             "Jaarsveld, borg voor de pacht van Jan de With. Hij werd op 4-12-1792 in de kerk van Lopikerkapel begraven, "
-            "in een huurgraf. Waarschijnlijk is hij de Huijbert die op 25-7-1717 in Lopikerkapel werd gedoopt als zoon "
-            "van Jan Ariensz van Oostrum en Geertje Gerrits (van Beusekom), maar dat is nog niet bewezen (zie de bronnenpagina).",
+            "in een huurgraf. Vrijwel zeker is hij de Huijbert die op 25-7-1717 in Lopikerkapel werd gedoopt als zoon "
+            "van Jan Ariensz van Oostrum, schipper onder Jaarsvelderkapel, en Geertje Gerrits (van Beusekom): er is geen "
+            "andere Huijbert, zoon van een Jan van Oostrum, in de streek (zie de bronnenpagina).",
        recs=[("Ondertrouw en huwelijk 1748", DTB.format("AFA3")), ("Doop dochter Geertruij 1748", DTB.format("AE26")),
              ("Ondertrouw en huwelijk 1751", DTB.format("AFA6")),
              ("Borgtocht 1771", "hua:609C5BC0-CC36-4642-E053-4701000A17FD"), ("Begrafenis 1792", DTB.format("B2A6"))])
