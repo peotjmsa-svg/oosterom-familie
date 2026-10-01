@@ -175,3 +175,27 @@ Next steps:
 2. Benschop 1870 marriage (not indexed): browse the Benschop 1870 marriage register scans.
 3. Bergambacht: where Pieter's farm stood (bevolkingsregister Bergambacht 1900–1940, Streekarchief Midden-Holland).
 4. Jaarsveld schippers: any notarial or "veer" records about Teunis van Oostrum as skipper.
+
+## JohnOoms.nl "Geslacht Van Oostrum" (checked 2026-10-01)
+
+URL: https://johnooms.nl/genealogieen/van-oostrum/ (text saved in raw/johnooms.txt). Secondary source, partly
+sourced via Genealogie Online. It follows the Houten/'t Goy family (hofstede Oostrum, knapen, Wickenburgh) from
+Hendrik van Oistrum (ca. 1275) through Van Schayck descendants to:
+- 8. Adriaan Jansz van Oostrum (1505–1576, Houten) × Lijsbeth Stevensdr van Schayck (1540)
+- 9. Jan Adriaansz (1545–1586) × Marrichgen Eerstens Jacobsdr van Schaijck (1575)
+- 10. Adriaan Jansz (1576–1630, Bunnik) × Annichjen Cornelisdr (1595)
+- 11. Ernst Gerrit Adriaansz (ca. 1610 Lopikerkapel – 1639) × Theuntgen Ghijsbertsdr, m. 25-5-1630 Jaarsveld
+- 12. **Arie Ernsts van Oostrum** (ca. 1635 – ca. 1706 Lopikerkapel) × Grietje Claasdr Blom (b. 1640 Lopik, dau. of
+  Claas Bastiaans Blom and Adriaantje Thomasdr Pellen), m. 26-5-1661 Lopik. **"In 1699 was hij burgemeester van
+  Jaarsveld."** Children: Maaike, Ernst (bapt. 20-1-1670 Meerkerk, m. 1690 Marrigje Jans Doncker), Claasje, Thomas,
+  Marrigje, Pieter (m. 1699 Jaarsveld, d. 1747), Aaltje, Adriaan, Jacob, **Jan Ariens van Oostrum** (not followed
+  further on the site).
+- Site continues with Ernst's and Pieter's lines (Van der Velden, Graafland, Stigter), not with Jan.
+
+Assessment: same family as ours one generation above Jan Ariensz. Jan Ariens is listed as a child of Arie Ernsts ×
+Grietje Blom, which supports our probable link. Our own line (Jan → Huijbert → Teunis …) is not on the site.
+Checked on Open Archieven: Jaarsveld marriages of the siblings exist (Aaltjen Ariendr 1680, Jacob Arienz 1691, Maagje
+Adriaens 1693, Claasje 1698, Pieter Arijenz 1699), and Lopik ones (Eerst 1690, Thomas 1692, Jan 1693). Ooms's
+"Ernst bapt. 1670 Meerkerk" conflicts with the Lopik baptism of Aerst Ariensz 27-3-1664 (maybe two sons).
+The 1630 Jaarsveld marriage of Ernst × Theuntgen is not on Open Archieven; generations 1–10 are older secondary work.
+Leads: "burgemeester van Jaarsveld 1699" (Jaarsveld court/village archive), Genealogie Blom II on the same site.
