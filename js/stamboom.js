@@ -46,16 +46,41 @@
   }
 
   function buildHierarchy(rootId) {
+    // The direct line (root down to MY_LINE_ID): at every level that child is placed in the middle of its
+    // siblings, so the line runs roughly down the centre of the tree.
+    const parentOf = {};
+    Object.values(DATA.people).forEach((p) => (p.children || []).forEach((c) => {
+      if (!(c in parentOf)) parentOf[c] = p.id;
+    }));
+    const lineSet = new Set();
+    for (let x = MY_LINE_ID; x; x = parentOf[x]) lineSet.add(x);
+    const size = (n) => (n.children ? n.children.reduce((s, c) => s + size(c), 0) : 1);
+
     const seen = new Set();
     function node(id) {
       if (seen.has(id)) return null;
       seen.add(id);
       const p = DATA.people[id];
       if (!p) return null;
-      const children = (p.children || [])
+      let children = (p.children || [])
         .map(node)
         .filter(Boolean)
         .sort((a, b) => (a.data.birth_year || 9999) - (b.data.birth_year || 9999));
+      const li = children.findIndex((c) => lineSet.has(c.data.id));
+      if (li >= 0 && children.length > 1) {
+        const line = children[li];
+        const others = children.filter((_, i) => i !== li);
+        const sizes = others.map(size);
+        const total = sizes.reduce((a, b) => a + b, 0);
+        // split the other siblings (kept in birth order) so both sides are about equally wide
+        let best = 0, bestDiff = Infinity, acc = 0;
+        for (let k = 0; k <= others.length; k++) {
+          const diff = Math.abs(acc - (total - acc));
+          if (diff < bestDiff) { bestDiff = diff; best = k; }
+          if (k < others.length) acc += sizes[k];
+        }
+        children = [...others.slice(0, best), line, ...others.slice(best)];
+      }
       return { data: p, children: children.length ? children : undefined };
     }
     return node(rootId);
