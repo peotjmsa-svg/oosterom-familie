@@ -15,3 +15,12 @@
 - [ ] Toegang 205 Huis Jaarsveld (heerlijkheid): pacht- en leenregisters 1550–1650. Zoek Smetser, Arien/Cornelis
   Smetser, Van Oostrum, het goed Oversloot. Doel: waar komt de naam Van Oostrum vandaan, wie was de vrouw van
   Cornelis Smetser (ca. 1565)?
+- [ ] Akte 2-5-1839, notaris mr C.G. de Balbian van Doorn te Jutphaas: waarschijnlijk de aankoop van de boerderij van
+  Arie Oosterom en Elisabeth Kooiman.
+
+## RHC Rijnstreek en Lopikerwaard (Woerden, rhc@woerden.nl)
+- [ ] Notaris N.F. Cambier van Nooten, Lopik (L156): boedelinventaris 17-3-1893 (inv. 1184 nr 1408), veiling
+  3-10-1893 (inv. 1185 nr 1493), boedelscheiding 13-12-1893 (inv. 1185 nr 1525): nalatenschap Elisabeth Kooiman,
+  weduwe van Arie Oosterom. Doel: beschrijving en ligging van de boerderij in (Zuid-)Polsbroek.
+- [ ] Testament 4-1-1881, notarieel archief IJsselstein (Y045 inv. 2954 nr 30): Arie Oosterom en Elisabeth Kooiman.
+- [ ] Zelf online lezen: L156 inv. 1111–1112, notarissen Lopik 1609–1664 (447 scans): Smetser / Van Oostrum.

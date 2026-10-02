@@ -62,7 +62,8 @@ person("teunis_1762", "Teunis Huijbertsz van Oostrum", "m", "5-12-1762", "27-8-1
             "Trouwde op 2-12-1787 in Lopikerkapel met Geertje Dekker uit Noordeloos. Ze kregen veertien kinderen; vier "
             "zoons heetten Arie, en alleen de laatste (1801) bleef leven. Teunis was schipper en woonde in Jaarsveld, "
             "aan de Lek (huwelijksakte van zijn zoon Arie, 1830). Hij overleed in Jaarsveld op 27-8-1830, 68 jaar oud, "
-            "drie dagen na zijn vrouw. De overlijdensakte noemt zijn ouders Huibert Oosterom en Willemijntje Jaarsvelt.",
+            "drie dagen na zijn vrouw. De overlijdensakte noemt zijn ouders Huibert Oosterom en Willemijntje Jaarsvelt. "
+            "Hij was ook boer met eigen grond: volgens de memorie van successie (10-11-1830) bezat het paar een bouwmanswoning (huis, berg en schuur, nr. 7) met 7,7 ha land onder Jaarsvelderkapel, van de Enge IJssel tot de Lekdijk, plus 4,2 ha uiterwaard aan de Lek en een huis (nr. 9) met 2,1 ha in Lopik. In het kadaster van 1832 staat hij als Oosterum H.Z. Teunis, schipper, eigenaar van Jaarsveld A124-157 en A317-319 (erf A149, nu Kapelsepad, Lopikerkapel).",
        recs=[("Doop 1762", DTB.format("AE73")), ("Ondertrouw en huwelijk 1787", DTB.format("B00F")),
              ("Overlijden 1830", "hua:CD30A6D2-0FBA-4B6C-B213-C5C1D21D27E4")])
 person("geertje_dekker", "Geertje Dekker", "f", "ca. 1767", "24-8-1830", "Noordeloos",
@@ -97,7 +98,8 @@ person("arie_1801", "Arie Oosterom", "m", "23-2-1801", "15-8-1881", "Jaarsveld",
             "Dekker. Hij was de vierde zoon met de naam Arie; de drie eerdere waren waarschijnlijk als baby gestorven. Bij "
             "zijn huwelijk op 4-6-1830 in Willige Langerak met Elisabeth Kooiman (19) was hij, net als zijn vader, "
             "schipper in Jaarsveld. Getuige was onder anderen zijn broer Cornelis Oosterom (24), bouwman. Daarna ging hij "
-            "boeren: in 1835 is hij bouwman in Zuid-Polsbroek, en zijn vrouw heet landbouwster. Hij overleed op "
+            "boeren. In november 1830 is hij 'zonder beroep, te Willige Langerak' (memorie van successie van zijn ouders); "
+            "in 1835 is hij bouwman in Zuid-Polsbroek, en zijn vrouw heet landbouwster. Hij overleed op "
             "80-jarige leeftijd in huis nummer 57 in Polsbroek.",
        recs=[("Doop 1801", DTB.format("AF44")), ("Huwelijk 1830", "hua:4E6732AB-5866-4D96-A40F-79FC7E4836C3"),
              ("Geboorte zoon Teunis 1835", "hua:E4F7BA2B-ADE9-4399-A299-95F0D6C3D701"),
@@ -178,8 +180,9 @@ for pid, nm, sx, dt, died, rid, note in KIDS_1847:
 # --- Generation 5: Pieter Oosterom (1875-1959) ---
 person("pieter_1875", "Pieter Oosterom", "m", "17-5-1875", "10-9-1959", "Polsbroek", occ="landbouwer (bouwman)",
        note="Geboren in Polsbroek. Trouwde daar op 25-10-1907 (32 jaar) met Willempje Lekkerkerker (30). Na de geboorte "
-            "van zoon Arie in 1908 verhuisde het gezin naar Bergambacht, aan de overkant van de Lek in Zuid-Holland, "
-            "waar Pieter boer was. Hij overleed daar op 84-jarige leeftijd.",
+            "van zoon Arie in 1908 verhuisde het gezin in 1909 via Stolwijk naar Bergambacht, aan de overkant van de Lek, "
+            "waar Pieter landbouwer was aan de Hogedijk (toen nr. 149). In april 1925 vertrok het gezin naar Langerak. "
+            "Hij overleed op 84-jarige leeftijd in Bergambacht (bevolkingsregisters Stolwijk en Bergambacht).",
        recs=[("Geboorte 1875", "hua:E68DD65A-AD25-449A-AF77-D76755DE8B4D"),
              ("Huwelijk 1907", "hua:6CF6874D-62DA-415E-8D90-C7F48CB94E2F"),
              ("Overlijden 1959", "smh:308d74b4-2b47-afa9-72cb-420fced74522")], mh="1500008")
