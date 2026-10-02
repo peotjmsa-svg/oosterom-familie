@@ -37,3 +37,16 @@ Read once per project, not per round. Append here when a round finds a new one; 
   `https://www.myheritage.nl/profile-OYYV6RLFE43U2DPKEJO6ILZTOTT5LPI-<id>/x`. Family members on a profile page are
   not `<a>` links, so their ids cannot be read from the page; ask the user for profile links.
 - Use curl, not Python urllib (SSL error on this machine).
+- HisGIS gemeentenaam for the north part of Polsbroek is "Noord Polsbroek" (with a space, code 06057), unlike
+  "Zuid-Polsbroek" which uses a hyphen - try both spellings for a new gemeente before concluding scans do not exist.
+- archiefman.nl (bouwvergunningen-indexen, e.g. Bergambacht bwt2063.htm) blocks WebFetch's default user-agent with
+  a 403 but answers normally (200) to curl with a browser user-agent - a UA filter, not real bot protection.
+- BAG bouwjaar/address lookup: PDOK locatieserver `free?q=<adres>` gives a point (no bouwjaar); for bouwjaar use
+  PDOK BAG WFS `service.pdok.nl/lv/bag/wfs/v2_0`, typeName `bag:verblijfsobject`, a tight `bbox` (not a `CQL_FILTER`
+  on `identificatie` — that param is ignored on this endpoint and returns unrelated features nationwide), then
+  filter the returned rows for the right `openbare_ruimte` + `huisnummer`.
+- RHC Rijnstreek en Lopikerwaard (archief.rhcrijnstreek.nl): the site's own name index IS free-text searchable, but
+  only via normal interactive browsing (debug Chrome) - a scripted POST to `zoeken.php` gets HTTP 403 (CSRF/WAF).
+  URL facet filters like `filters[Plaats][Polsbroek]=Polsbroek` work as a hard filter once on a results page.
+- graftombe.nl hides deaths from the last decades behind a login ("Gegevens van recent overleden personen worden
+  niet weergegeven op het openbare gedeelte") - do not log in, treat as a dead end for recent deaths.

@@ -7,7 +7,8 @@ import sys, re, time, os, io
 from playwright.sync_api import sync_playwright
 from PIL import Image
 args = sys.argv[1:]; mode, url = args[0], args[1]
-w = 2400
+w = 2400; pause = 0
+if "--sleep" in args: pause = float(args[args.index("--sleep") + 1]); args = args[:args.index("--sleep")] + args[args.index("--sleep") + 2:]
 if "--w" in args: w = int(args[args.index("--w") + 1]); args = args[:args.index("--w")]
 with sync_playwright() as p:
     b = p.chromium.connect_over_cdp("http://127.0.0.1:9223"); ctx = b.contexts[0]; pg = ctx.new_page()
@@ -33,6 +34,7 @@ with sync_playwright() as p:
     else:
         out = args[2]; os.makedirs(out, exist_ok=True)
         for i in map(int, args[3:]):
+            if os.path.exists(os.path.join(out, f"s{i:04d}.jpg")): continue
             n0 = len(sess)
             pg.select_option("select.scans-select", str(i))
             for _ in range(20):
@@ -45,5 +47,5 @@ with sync_playwright() as p:
                                 headers={"Referer": "https://archief.rhcrijnstreek.nl/"})
             im = Image.open(io.BytesIO(r.body())).convert("L")
             im = im.resize((w, int(im.size[1] * w / im.size[0])), Image.LANCZOS)
-            f = os.path.join(out, f"s{i:04d}.jpg"); im.save(f, quality=85); print(f, bid)
+            f = os.path.join(out, f"s{i:04d}.jpg"); im.save(f, quality=85); print(f, bid, flush=True); time.sleep(pause)
     pg.close()

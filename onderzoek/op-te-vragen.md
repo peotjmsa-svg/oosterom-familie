@@ -25,3 +25,11 @@
 - [ ] Testament 4-1-1881, notarieel archief IJsselstein (Y045 inv. 2954 nr 30): Arie Oosterom en Elisabeth Kooiman.
 - [ ] Zelf online lezen: L156 inv. 1111 (register van testamenten 1609–1646, 289 scans, geen index): Smetser / Van
   Oostrum. Inv. 1112 (1645–1664) heeft een register: geen Smetser of Van Oostrum als eerste partij.
+
+## Nationaal Archief (Den Haag, studiezaal, nationaalarchief.nl)
+- [ ] Toegang 3.01.51 (Adriaan Steenis, ontvanger personele quotisatie dorpen en kleine steden van Holland),
+  inventarisnummer 11 ("Onder Schoonhoven", rekeningen 1745-1748): covers Zuidpolsbroek and Jaarsveld by name.
+  Confirmed (round 16, 2026-10-02) via the finding aid itself: fully public, but "Inventarisnummers van dit
+  archief zijn niet in kopievorm beschikbaar" - no scans/copies exist, reading-room visit only (can reserve
+  online). Doel: find Huijbert (Huybert) Jansz van Oostrum/zijn huishouden in de Jaarsveld-lijst, als aanvulling
+  op het ontbrekende boerderijbewijs.
