@@ -61,6 +61,7 @@ figure.photo { float: right; width: 220px; margin: 4px 0 12px 20px; }
 figure.photo.left { float: left; margin: 4px 20px 12px 0; }
 figure.photo img { width: 100%; border-radius: 6px; display: block; }
 figure.photo figcaption { font-size: .78rem; color: var(--muted); line-height: 1.35; margin-top: 4px; }
+figure.minimap .map { height: 160px; border-radius: 6px; background: var(--paper); }
 section.story { overflow: hidden; }
 @media (max-width: 560px) { figure.photo, figure.photo.left { float: none; width: 100%; max-width: 320px; margin: 8px 0 14px; } }
 
