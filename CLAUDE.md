@@ -13,9 +13,9 @@ Site style: Verhaal (Kagol look).
 Live site: https://peotjmsa-svg.github.io/oosterom-familie/ (GitHub Pages from `main`). Commit and push after each round.
 
 ## Cost tiers (user, 2026-10-02)
-Cheap look-ups go to the `stamboom-zoeker` agent (Haiku), research questions on printed/indexed sources to
-`stamboom-onderzoeker` (Sonnet), script work to Codex (`/codex:rescue`). The main session only reads old handwriting,
-decides proven links, edits `build_data.py` content and the site texts. Details: familie-stamboom skill, section 7.
+Chat session on Sonnet (`/model sonnet`). Look-ups → `stamboom-zoeker` (Haiku); research questions →
+`stamboom-onderzoeker` (Sonnet); old handwriting and proof verdicts → `stamboom-schriftlezer` (Opus); scripts →
+Codex (`/codex:rescue`). Details: familie-stamboom skill, section 7.
 
 ## Site
 - `index.html` (story), `stamboom.html` + `js/stamboom.js` + `css/stamboom.css`, `kaart.html` (Leaflet),
