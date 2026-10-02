@@ -33,7 +33,7 @@ Live site: https://peotjmsa-svg.github.io/oosterom-familie/ (GitHub Pages from `
 - `kadaster1832.py OUT Gemeente Sectie "nrs"`: 1832 parcels (HisGIS Overpass) drawn on the PDOK aerial photo.
 - `hua_page.py`: download pages of a Het Utrechts Archief scanned register (memories van successie etc.).
 - `oa_bron.py Naam "Bronsoort" [plaats]`: Open Archieven records of one source type (Bevolkingsregister, ...).
-- `streetview.py`: Street View stills via the debug Chrome, for reference only (Google imagery, not on the site).
+- `streetview.py`: Street View stills via the debug Chrome, publish only with "© Google Street View (year)" in the caption.
 - `commons_zoek.py` / `commons_info.py`: Wikimedia Commons photos with licence. `lees_open_tabblad.py`: read the
   user's open Chrome tabs.
 - Debug Chrome: `"C:\Program Files\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9223
