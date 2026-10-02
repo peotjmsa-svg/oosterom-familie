@@ -29,8 +29,15 @@ Codex (`/codex:rescue`). Details: familie-stamboom skill, section 7.
   Churches, village views and old prints are fine.
 
 ## Research notes (`onderzoek/`)
-- `plan-oosterom.md`: the line per generation, the wall (Huijbert's father), MyHeritage ids, searched without
-  result, contradictions.
+- `status-oosterom.md`: the accepted line, the current open question, next steps. Read this **only**, at the start
+  of every round — max ~60 lines, kept current by overwriting, never grown.
+- `log/round-01.md` … `round-NN.md`: one file per round, append-only, full history (findings, dead ends,
+  contradictions, MyHeritage ids). Never bulk-read; grep `log/` for a name/date to find the right round, open only
+  that file.
+- `tricks.md`: URL patterns and API quirks that worked, read once per project, not per round.
+- Round boundary (for `/clear`): a round = one question chased to resolution or dead end, however many prompts that
+  takes — not a fixed turn count. Clear only once the outcome is written into `status-oosterom.md` /
+  `log/round-NN.md` (test: "can I resume from the files alone?"); never clear mid-dig on an open question.
 
 ## Scripts
 - `oa_zoek.py "Naam"` / `oa_gezin.py "Man & Vrouw"`: Open Archieven search (record ids `hua:…`, `smh:…`).
