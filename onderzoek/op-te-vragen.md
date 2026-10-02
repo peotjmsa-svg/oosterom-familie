@@ -23,4 +23,5 @@
   3-10-1893 (inv. 1185 nr 1493), boedelscheiding 13-12-1893 (inv. 1185 nr 1525): nalatenschap Elisabeth Kooiman,
   weduwe van Arie Oosterom. Doel: beschrijving en ligging van de boerderij in (Zuid-)Polsbroek.
 - [ ] Testament 4-1-1881, notarieel archief IJsselstein (Y045 inv. 2954 nr 30): Arie Oosterom en Elisabeth Kooiman.
-- [ ] Zelf online lezen: L156 inv. 1111–1112, notarissen Lopik 1609–1664 (447 scans): Smetser / Van Oostrum.
+- [ ] Zelf online lezen: L156 inv. 1111 (register van testamenten 1609–1646, 289 scans, geen index): Smetser / Van
+  Oostrum. Inv. 1112 (1645–1664) heeft een register: geen Smetser of Van Oostrum als eerste partij.

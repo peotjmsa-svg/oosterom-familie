@@ -552,3 +552,10 @@ Name question – notary records Lopik (RHC L156):
 Tools added: scripts/oa_not.py (deed summaries), scripts/oa_arch.py (one archive + period), scripts/delpher.py and
 delpher_text.py (KB SRU search and OCR text; page image via resolver urn ...:pNNN:image, ALTO via ...:pNNN:alto),
 scripts/rhc_scan.py (RHC scans; `id` mode by bestand_id is reliable, `get` by list index; ~30 s per full scan).
+- Inv. 1111 is "Register van testamenten" of the Lopik notary, 1609–1646 (title page scan 1), 289 scans, no index;
+  each testament starts with a heading ("Testament van ..."). Scans 0–14 downloaded (raw/rhc/all1111): testament of
+  heer Johan vander Berch, domdeken Utrecht (1609). After ~70 full-size downloads in total the RHC image server started
+  timing out (2026-10-02 ~12:45), so bulk downloading was stopped. Faster route found: the viewer's tile request
+  `afbeelding.img?...&ACTION=maketile&t_width=..&t_height=..&t_offsetx=..&t_offsety=..&scalesize=..` (not yet tested
+  for a whole page at reduced scale). Ask the user before resuming (bulk download), go slowly (one scan per 30 s).
+- Sheets for reading: scripts/sheet.py DIR FROM TO (4 pages per sheet, headings readable at 1000 px).
