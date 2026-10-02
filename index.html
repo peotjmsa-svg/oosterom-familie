@@ -69,8 +69,11 @@
 
   <section class="story" id="oostrum">
     <h2>Lopikerkapel en Jaarsveld</h2>
-    <figure class="photo minimap"><div class="map" data-place="Jaarsveld"></div>
-      <figcaption>Jaarsveld en Lopikerkapel, aan de Lek. <a href="kaart.html">Hele kaart</a>.</figcaption></figure>
+    <details class="minimap">
+      <summary>Kaart: Jaarsveld en Lopikerkapel</summary>
+      <div class="map" data-place="Jaarsveld"></div>
+      <p class="map-note"><a href="kaart.html">Hele kaart</a></p>
+    </details>
     <p><b>Huijbert van Oostrum</b> woonde in de buurtschap Jaarsvelderkapel en ging naar de kerk in <b>Lopikerkapel</b>,
     een klein dorp in de Lopikerwaard. In februari 1748 lieten hij en Ariaentje Boef uit Lopik zich in de kerk
     "aantekenen" om te trouwen. Hij noemde zich toen <i>Huybert Janse Oostrum</i>: Huijbert, zoon van Jan.</p>
@@ -116,8 +119,11 @@
 
   <section class="story" id="polsbroek">
     <h2>Van schipper naar boer: Polsbroek</h2>
-    <figure class="photo minimap"><div class="map" data-place="Polsbroek"></div>
-      <figcaption>Zuid-Polsbroek, waar Arie in 1839 zijn eigen hofstede kocht. <a href="kaart.html">Hele kaart</a>.</figcaption></figure>
+    <details class="minimap">
+      <summary>Kaart: Zuid-Polsbroek</summary>
+      <div class="map" data-place="Polsbroek"></div>
+      <p class="map-note"><a href="kaart.html">Hele kaart</a></p>
+    </details>
     <p>In juni 1830 trouwde <b>Arie Oosterom</b> in Willige Langerak met <b>Elisabeth Kooiman</b>, de 19-jarige
     dochter van een boer. In de huwelijksakte staat Arie, net als zijn vader, als <i>schipper</i>.</p>
     <figure class="scan">
@@ -145,6 +151,11 @@
       A. OOSTEROM, te Zuid-Polsbroek." Utrechtsche Courant, 28 januari 1839
       (<a href="https://resolver.kb.nl/resolve?urn=ddd:010807112:mpeg21:a0018">Delpher</a>).</figcaption>
     </figure>
+    <figure class="wide">
+      <img src="assets/img/arie_land1839.jpg" style="max-width:560px" alt="Luchtfoto met de percelen van de hofstede die Arie Oosterom in 1839 kocht" loading="lazy">
+      <figcaption>De hofstede van 1839 op een luchtfoto van nu: rood het huis en erf, geel het land in lange stroken.
+      Percelen: HisGIS; luchtfoto: Beeldmateriaal Nederland / PDOK, CC BY 4.0.</figcaption>
+    </figure>
     <figure class="photo"><img src="assets/img/zuidzijdseweg142_streetview.jpg" alt="Boerderij met rieten dak aan de Zuidzijdseweg 142 in Polsbroek" loading="lazy">
       <figcaption>Zuidzijdseweg 142, Polsbroek: de plek van Aries hofstede, nu met een huis uit 1888.
       © Google Street View (2023).</figcaption></figure>
@@ -166,8 +177,11 @@
 
   <section class="story" id="bergambacht">
     <h2>Over de Lek: Bergambacht</h2>
-    <figure class="photo minimap"><div class="map" data-place="Bergambacht"></div>
-      <figcaption>Bergambacht, in de Krimpenerwaard. <a href="kaart.html">Hele kaart</a>.</figcaption></figure>
+    <details class="minimap">
+      <summary>Kaart: Bergambacht</summary>
+      <div class="map" data-place="Bergambacht"></div>
+      <p class="map-note"><a href="kaart.html">Hele kaart</a></p>
+    </details>
     <figure class="photo"><img src="assets/img/bergambacht_kerk.jpg" alt="De hervormde kerk van Bergambacht" loading="lazy">
       <figcaption>De kerk van Bergambacht. Foto: Sailko,
       <a href="https://commons.wikimedia.org/wiki/File:Bergambacht,_Hervormde_Kerk,_01.jpg">Wikimedia Commons</a>, CC BY 3.0.</figcaption></figure>
@@ -185,15 +199,23 @@
 (function () {
   "use strict";
   const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
-  const els = document.querySelectorAll(".map[data-place]");
-  if (!els.length) return;
-  fetch("data/plaatsen.json").then((r) => r.json()).then((pl) => {
-    els.forEach((el) => {
-      const ll = pl[el.dataset.place];
-      if (!ll) return;
-      const map = L.map(el, { zoomControl: false, scrollWheelZoom: false, dragging: false, attributionControl: false }).setView(ll, 13);
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 16 }).addTo(map);
-      L.circleMarker(ll, { radius: 8, color: "#fff", weight: 2, fillColor: css("--oosterom"), fillOpacity: .95 }).addTo(map);
+  const dets = document.querySelectorAll("details.minimap");
+  if (!dets.length) return;
+  let pl = null;
+  const places = () => pl || (pl = fetch("data/plaatsen.json").then((r) => r.json()));
+  dets.forEach((det) => {
+    det.addEventListener("toggle", () => {
+      if (!det.open || det.dataset.mapReady) return;
+      det.dataset.mapReady = "1";
+      const el = det.querySelector(".map");
+      places().then((pl) => {
+        const ll = pl[el.dataset.place];
+        if (!ll) return;
+        const map = L.map(el, { zoomControl: false, scrollWheelZoom: false, dragging: false, attributionControl: false }).setView(ll, 13);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 16 }).addTo(map);
+        L.circleMarker(ll, { radius: 8, color: "#fff", weight: 2, fillColor: css("--oosterom"), fillOpacity: .95 }).addTo(map);
+        requestAnimationFrame(() => map.invalidateSize());
+      });
     });
   });
 })();
