@@ -100,7 +100,13 @@ person("arie_1801", "Arie Oosterom", "m", "23-2-1801", "15-8-1881", "Jaarsveld",
             "schipper in Jaarsveld. Getuige was onder anderen zijn broer Cornelis Oosterom (24), bouwman. Daarna ging hij "
             "boeren. In november 1830 is hij 'zonder beroep, te Willige Langerak' (memorie van successie van zijn ouders); "
             "in 1835 is hij bouwman in Zuid-Polsbroek, en zijn vrouw heet landbouwster. Hij overleed op "
-            "80-jarige leeftijd in huis nummer 57 in Polsbroek.",
+            "80-jarige leeftijd in huis nummer 57 in Polsbroek. In 1839 was hij huurder van een hofstede van ruim "
+            "28 bunder onder Zuid-Polsbroek (sectie A 570-607 en 641-655; in 1832 eigendom van Cornelia Maria de Graaff, "
+            "Amsterdam), die hij bij akte van 2-5-1839 (notaris De Balbian van Doorn, Jutphaas) kocht (Utrechtsche Courant "
+            "28-1-1839). Erf A580 = nu Zuidzijdseweg 142, Polsbroek. In zijn testament (4-1-1881, IJsselstein) noemt hij "
+            "vier boerderijen in Polsbroek: twee aan de Noordzijde (bewoond door zoon Hendrik en zoon Teunis) en twee aan de "
+            "Zuidzijde (waarvan 'Zuidzijde 48' voor Teunis). Twee daarvan werden na de dood van Elisabeth op 3-10-1893 "
+            "geveild (f 16.600 en f 29.000).",
        recs=[("Doop 1801", DTB.format("AF44")), ("Huwelijk 1830", "hua:4E6732AB-5866-4D96-A40F-79FC7E4836C3"),
              ("Geboorte zoon Teunis 1835", "hua:E4F7BA2B-ADE9-4399-A299-95F0D6C3D701"),
              ("Overlijden 1881", "hua:E1044046-EFE4-4952-ADA6-895FDCFC08AE")], mh="1500229")
@@ -134,7 +140,9 @@ person("teunis_1847", "Teunis Oosterom", "m", "16-5-1847", "25-5-1915", "Polsbro
             "Cornelia Lekkerkerker uit Benschop (de huwelijksakte is nog niet gevonden). Landbouwer in Polsbroek, in 1875 "
             "in huis nummer 33. Het echtpaar kreeg tussen 1871 en 1895 negentien kinderen; acht van hen stierven als baby. "
             "In de akten wordt de naam vaak Oostrom gespeld. Overleden in Polsbroek, 68 jaar oud. De overlijdensakte noemt "
-            "zijn ouders Arie Oosterom en Elizabeth Kooijman.",
+            "zijn ouders Arie Oosterom en Elizabeth Kooijman. In 1879 bestuurslid van de Algemene Gereformeerde of Grote "
+            "Armen van Polsbroek (hypotheekakte 27-5-1879, Oudewater). In 1881 bewoonde hij een boerderij van zijn vader "
+            "aan de Noordzijde; zijn vader legateerde hem een boerderij 'aan de Zuidzijde 48'. In 1893 bouwman te Polsbroek.",
        recs=[("Geboorte 1847", "hua:E1BDC780-9C50-4772-9FE5-40D6D4B24307"),
              ("Geboorte zoon Pieter 1875", "hua:E68DD65A-AD25-449A-AF77-D76755DE8B4D"),
              ("Overlijden 1915", "hua:A8F3AC7D-FF87-44EF-9636-6A154584BAF3")], mh="1500025")
