@@ -73,6 +73,11 @@ section.story { overflow: hidden; }
 .timeline div { margin: 6px 0; }
 .timeline b { font-family: system-ui, sans-serif; font-size: .9rem; color: var(--accent); margin-right: 6px; }
 
+figure.photo.namechange { background: var(--paper); border: 1px solid var(--rule); border-radius: 8px; padding: 10px 12px 2px; }
+figure.photo.namechange .timeline { border-left-color: var(--oosterom); margin: 2px 0; padding-left: 12px; }
+figure.photo.namechange .timeline div { margin: 7px 0; font-size: .78rem; line-height: 1.3; }
+figure.photo.namechange .timeline b { font-size: .78rem; margin-right: 0; }
+
 .note {
   background: var(--paper); border-left: 4px solid var(--accent); padding: 10px 14px; border-radius: 4px; margin: 16px 0;
   font-size: .95rem;
