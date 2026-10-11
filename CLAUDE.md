@@ -37,7 +37,7 @@ Codex (`/codex:rescue`). Details: familie-stamboom skill, section 7.
 - `tricks.md`: URL patterns and API quirks that worked, read once per project, not per round.
 - Round boundary (for `/clear`): a round = one question chased to resolution or dead end, however many prompts that
   takes — not a fixed turn count. Clear only once the outcome is written into `status-oosterom.md` /
-  `log/round-NN.md` (test: "can I resume from the files alone?"); never clear mid-dig on an open question.
+  `log/round-NN.md` (test: "can I resume from the files alone?"). Past the token budget below, write the hypothesis to the log and clear anyway.
 
 ## Scripts
 - `oa_zoek.py "Naam"` / `oa_gezin.py "Man & Vrouw"`: Open Archieven search (record ids `hua:…`, `smh:…`).
@@ -56,3 +56,12 @@ Codex (`/codex:rescue`). Details: familie-stamboom skill, section 7.
 ## Open points
 - Huijbert van Oostrum's baptism (1695 or 1717?) and father Jan Ariensz van Oostrum: see the plan.
 - 1870 Benschop marriage deed of Teunis × Adriana Cornelia Lekkerkerker not found.
+
+## Token budget (hard rules, 2026-10-11)
+Measured: ~80% of spend is re-reading long contexts (sessions averaged 400–500k, peak 967k). Details: familie-stamboom
+skill, section 7, "Context budget".
+- At ~150k context: write status/log, then ask the user to `/clear`. Never pass ~250k.
+- No scan images in the main session; batch them to `stamboom-schriftlezer` / `stamboom-onderzoeker`.
+- No repeated inline `python - <<'EOF'` scripts; a snippet used twice becomes a file in `scripts/`.
+- More than ~5 look-ups for one question → one batched `stamboom-zoeker` call.
+- Edit, not Write, for existing pages; read long files with offset/limit or Grep.
